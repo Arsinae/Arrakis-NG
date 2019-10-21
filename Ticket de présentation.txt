@@ -1,0 +1,9 @@
+Membre et Responsable: thibaud.huber@epitech.eu;
+Nom du projet: ArrakisNG;
+Technologies utilisées: Angular 8(HTML, CSS, Javascript);
+Ambition: Publication gratuite sur Npm;
+Concurrence: Il existe de nombreuses librairies de composants pour Angular. les principales sont Angular Material, développé par Google, et MD Bootstrap qui propose des composants de Bootstrap, librairie de composants Web la plus connue, adaptés au Material Design.
+Courte description: ArrakisNG est une librairie de composants pour le Framework Angular. Elle a pour but d'être facile à comprendre et à prendre en main, être personnalisable et comporter la majorité des composants nécéssaires aux sites webs basiques.
+Créneaux proposés:
+    Jeudi 19 ou Vendredi 20 n'importe quand dans la journée;
+    Lundi 23, Mardi 24 ou Mercredi 25 à 8h ou 8h30; 
