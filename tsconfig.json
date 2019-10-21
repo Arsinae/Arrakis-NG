@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "arrakis-lib": [
+        "dist/arrakis-lib"
+      ],
+      "arrakis-lib/*": [
+        "dist/arrakis-lib/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

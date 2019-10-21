@@ -12,7 +12,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "arr",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -121,6 +121,41 @@
             "production": {
               "devServerTarget": "arrakis-ng:serve:production"
             }
+          }
+        }
+      }
+    },
+    "arrakis-lib": {
+      "projectType": "library",
+      "root": "projects/arrakis-lib",
+      "sourceRoot": "projects/arrakis-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/arrakis-lib/tsconfig.lib.json",
+            "project": "projects/arrakis-lib/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/arrakis-lib/src/test.ts",
+            "tsConfig": "projects/arrakis-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/arrakis-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/arrakis-lib/tsconfig.lib.json",
+              "projects/arrakis-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
