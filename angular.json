@@ -12,7 +12,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "arr",
+      "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -129,7 +129,7 @@
       "projectType": "library",
       "root": "projects/arrakis-lib",
       "sourceRoot": "projects/arrakis-lib/src",
-      "prefix": "lib",
+      "prefix": "ar",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",

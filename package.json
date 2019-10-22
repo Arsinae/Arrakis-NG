@@ -1,8 +1,11 @@
 {
   "name": "arrakis-ng",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
+    "postinstall": "npm run library && ng build --aot --prod",
+    "library": "ng build arrakis-lib && npm run bundle-styles",
+    "bundle-styles": "copyfiles \"./projects/arrakis-lib/src/theme/*\" \"./dist/arrakis-lib/themes/\"",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
@@ -19,6 +22,7 @@
     "@angular/platform-browser": "~8.2.0",
     "@angular/platform-browser-dynamic": "~8.2.0",
     "@angular/router": "~8.2.0",
+    "copyfiles": "^2.1.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
@@ -29,9 +33,10 @@
     "@angular/cli": "~8.2.2",
     "@angular/compiler-cli": "~8.2.0",
     "@angular/language-service": "~8.2.0",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
+    "bundle-scss": "^1.4.9",
     "codelyzer": "^5.0.0",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",

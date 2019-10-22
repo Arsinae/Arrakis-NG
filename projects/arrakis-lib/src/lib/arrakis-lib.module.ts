@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
-import { CardModule } from './card/card.module';
+import { ARCardModule } from './card/card.module';
 
 @NgModule({
   declarations: [],
   imports: [
-    CardModule
+    ARCardModule
   ],
   exports: []
 })
