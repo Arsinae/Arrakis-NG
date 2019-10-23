@@ -20,10 +20,10 @@
   --ar-info: #5a5aba;
   --ar-success: #72ba72;
 
-  --ar-gradient1: linear-gradient(75deg, #5aa2ba, #5a5aba);
-  --ar-gradient2: linear-gradient(75deg, #ba8a5a 20%, #ba5a5a 80%);
-  --ar-gradient3: linear-gradient(75deg, #5aa2ba, #92FE9D);
-  --ar-gradient4: linear-gradient(75deg, #ba9e5a, #ba8a5a);
+  --ar-gradient1: linear-gradient(90deg, #5aa2ba 10%, #5a5aba 90%);
+  --ar-gradient2: linear-gradient(45deg, #baba5a 10%, #ba5a5a 90%);
+  --ar-gradient3: linear-gradient(90deg, #5aa2ba 10%, #72ba5a 90%);
+  --ar-gradient4: linear-gradient(90deg, #a25aba 10%, #ba5a5a 90%);
 
   --ar-padding: 6px;
 
@@ -31,4 +31,24 @@
   --ar-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
   --ar-big-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
 
+}
+
+.ar-primary-color {
+  color: var(--ar-primary);
+}
+
+.ar-secondary-color {
+  color: var(--ar-secondary);
+}
+
+.ar-small-shadow {
+  box-shadow: var(--ar-small-shadow);
+}
+
+.ar-shadow {
+  box-shadow: var(--ar-shadow);
+}
+
+.ar-big-shadow {
+  box-shadow: var(--ar-big-shadow);
 }

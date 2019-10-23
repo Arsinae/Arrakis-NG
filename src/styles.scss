@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~highlight.js/styles/rainbow.css";
+@import "../projects/arrakis-lib/src/themes/dune-theme";
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+}
+
+.component-name {
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--ar-primary);
+}

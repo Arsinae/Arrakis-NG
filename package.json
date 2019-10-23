@@ -5,7 +5,7 @@
     "ng": "ng",
     "postinstall": "npm run library && ng build --aot --prod",
     "library": "ng build arrakis-lib && npm run bundle-styles",
-    "bundle-styles": "copyfiles \"./projects/arrakis-lib/src/theme/*\" \"./dist/arrakis-lib/themes/\"",
+    "bundle-styles": "copyfiles -V true -u 4 \"./projects/arrakis-lib/src/themes/*.scss\" \"./dist/arrakis-lib/themes\"",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
@@ -23,6 +23,8 @@
     "@angular/platform-browser-dynamic": "~8.2.0",
     "@angular/router": "~8.2.0",
     "copyfiles": "^2.1.1",
+    "highlight.js": "^9.15.10",
+    "ngx-highlightjs": "^3.0.3",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"

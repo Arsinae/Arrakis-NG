@@ -1,0 +1,20 @@
+
+#components-headerbar {
+  width: 100%;
+  background-image: var(--ar-gradient4);
+  padding: 35px 0;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, .6);
+  box-shadow: var(--ar-shadow);
+}
+
+#components-list {
+  padding: 12px 5%;
+
+  &>*:not(:last-child) {
+    border-bottom: 1px solid #bbbbbb;
+  }
+}
