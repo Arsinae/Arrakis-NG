@@ -1,0 +1,60 @@
+<div class="component-name">
+  Carte Retournable
+</div>
+
+<div class="card-container">
+  <div>
+    <ar-flipping-card [height]="150">
+      <div front>
+        <div class="card-example" [style.backgroundImage]="'url(assets/imgs/arrakis.jpg)'"></div>
+      </div>
+      <div back>
+        <div class="card-back">Arrakis</div>
+      </div>
+    </ar-flipping-card>
+  </div>
+
+  <div>
+    <ar-flipping-card [height]="150" [shadow]="'small-shadow'" [rounded]="true">
+      <div front>
+        <div class="card-example" [style.backgroundImage]="'url(assets/imgs/caladan.jpg)'"></div>
+      </div>
+      <div back>
+        <div class="card-back">Caladan</div>
+      </div>
+    </ar-flipping-card>
+  </div>
+
+  <div>
+    <ar-flipping-card [height]="150" [shadow]="'big-shadow'" [bounce]="true">
+      <div front>
+        <div class="card-example" [style.backgroundImage]="'url(assets/imgs/giediprime.jpg)'"></div>
+      </div>
+      <div back>
+        <div class="card-back">Giedi Prime</div>
+      </div>
+    </ar-flipping-card>
+  </div>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    API
+  </div>
+
+  <table class="explanation-title">
+    <tr *ngFor="let explanation of explanations">
+      <td>{{explanation.title}}</td>
+      <td>{{explanation.explanation}}</td>
+    </tr>
+  </table>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    Exemple
+  </div>
+  <div>
+    <pre><code [highlight]="htmlCode"></code></pre>
+  </div>
+</div>

@@ -13,8 +13,4 @@
 
 #components-list {
   padding: 12px 5%;
-
-  &>*:not(:last-child) {
-    border-bottom: 1px solid #bbbbbb;
-  }
 }

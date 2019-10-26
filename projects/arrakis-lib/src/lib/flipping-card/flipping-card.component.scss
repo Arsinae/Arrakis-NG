@@ -1,0 +1,41 @@
+.ar-flipping-card-container {
+  width: 100%;
+
+  .ar-flipping-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center center;
+    transition-duration: .8s;
+    transition-property: transform;
+
+    .ar-card-front, .ar-card-back {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      color: white;
+      backface-visibility: hidden;
+      overflow: hidden;
+    }
+
+    .ar-card-back {
+      transform: rotateY(180deg);
+    }
+
+    &.ar-flipped {
+      transform: rotateY(-180deg);
+    }
+
+    &.ar-bounce {
+      transition-timing-function: cubic-bezier(.1, 0.6, 0.4, 1.25);
+    }
+
+    &.ar-rounded>div {
+      border-radius: 12px;
+    }
+  }
+}

@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { ARCardModule } from './card/card.module';
+import { ARFlippingCardModule } from './flipping-card/flipping-card.module';
 
 @NgModule({
   declarations: [],
   imports: [
-    ARCardModule
+    ARCardModule,
+    ARFlippingCardModule
   ],
-  exports: []
+  exports: [
+    ARCardModule,
+    ARFlippingCardModule
+  ]
 })
 export class ArrakisLibModule { }

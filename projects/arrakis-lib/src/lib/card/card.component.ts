@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ARCardComponent implements OnInit {
 
   @Input() shadow: string = 'shadow';
-  @Input() radius: string = 'rounded';
+  @Input() rounded: boolean = true;
 
   constructor() { }
 
@@ -16,6 +16,7 @@ export class ARCardComponent implements OnInit {
   }
 
   get getClasses() {
-    return 'ar-card ar-' + this.shadow + ' ar-' + this.radius;
+    const classes = 'ar-card ar-' + this.shadow;
+    return (this.rounded) ? (classes + ' ar-rounded') : classes;
   }
 }

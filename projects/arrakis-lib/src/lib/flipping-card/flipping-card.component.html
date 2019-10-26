@@ -1,0 +1,11 @@
+<div class="ar-flipping-card-container" [style.height.px]="height">
+  <div class="ar-flipping-card" [class.ar-flipped]="isFlip" [class.ar-bounce]="bounce" [class.ar-rounded]="rounded"
+  (click)="flipCard()">
+    <div class="ar-card-front ar-{{shadow}}">
+      <ng-content select="[front]"></ng-content>
+    </div>
+    <div class="ar-card-back ar-{{shadow}}">
+      <ng-content select="[back]"></ng-content>
+    </div>
+  </div>
+</div>

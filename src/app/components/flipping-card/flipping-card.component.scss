@@ -1,0 +1,30 @@
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 5%;
+
+  &>* {
+    margin: 6px;
+    width: 250px;
+  }
+
+  .card-example {
+    height: 150px;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .card-back {
+    position: relative;
+    height: 150px;
+    background-color: #424242;
+    padding: 60px;
+    box-sizing: border-box;
+    font-size: 22px;
+    text-align: center;
+    text-shadow: var(--ar-shadow);
+  }
+}
