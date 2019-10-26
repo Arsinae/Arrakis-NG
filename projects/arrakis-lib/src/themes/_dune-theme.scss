@@ -31,6 +31,8 @@
   --ar-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
   --ar-big-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
 
+  --border: 12px;
+
 }
 
 .ar-primary-color {
@@ -51,4 +53,8 @@
 
 .ar-big-shadow {
   box-shadow: var(--ar-big-shadow);
+}
+
+.ar-border-radius {
+  border-radius: var(--border);
 }

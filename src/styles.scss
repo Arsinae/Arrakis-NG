@@ -10,5 +10,42 @@ body {
 .component-name {
   font-size: 25px;
   font-weight: 500;
-  color: var(--ar-primary);
+  color: #424242;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 300px; height: 1px;
+    background-color: #424242;
+  }
+}
+
+.explanation {
+  .explanation-header {
+    font-size: 20px;
+    font-weight: 500;
+    color: #424242;
+    padding: 6px 12px;
+  }
+
+  table {
+    width: 100%;
+    padding: 6px 0;
+
+    tr {
+      padding: 6px;
+      background-color: #e5e5e5;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #c5c5c5;
+    }
+
+    td {
+      padding: 6px;
+      width: 50%;
+    }
+  }
 }

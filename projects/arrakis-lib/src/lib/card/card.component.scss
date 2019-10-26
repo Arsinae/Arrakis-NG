@@ -2,6 +2,6 @@
   width: 100%;
 
   &.ar-rounded {
-    border-radius: 6px;
+    border-radius: var(--border);
   }
 }
