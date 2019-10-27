@@ -8,7 +8,10 @@ import { ARAlertService, ARAlert } from 'projects/arrakis-lib/src/public-api';
 })
 export class AlertComponent implements OnInit {
 
-  public htmlCode = '<ar-card [shadow]=\"\'shadow\'\" [radius]=\"\'rounded\'\">\n  <div>\n    Une carte\n  </div>\n</ar-card>';
+  public htmlCode = '<ar-alert></ar-alert> // One time in the application\n';
+  public tsCode = 'constructor(private alertService: ARAlertService) {\n}\n\n' +
+    'addAlert(type: string, title: string, text: string, timer: number) {\n' +
+    '  const alert = new ARSnackBar(type, title, text, timer);\n  this.alertService.addAlert(alert);\n}\n';
   public explanations: Array<{title: string, explanation: string}> = [];
 
   constructor(private alertService: ARAlertService) { }
@@ -16,9 +19,10 @@ export class AlertComponent implements OnInit {
   ngOnInit() {
     this.explanations = [
       {title: 'Balise HTML', explanation: 'ar-alert'},
-      {title: 'Contenu', explanation: 'Le contenu de la carte'},
-      {title: '@Input() shadow', explanation: 'L\'ombre de la carte; String: "shadow"(défaut), "small-shadow" ou "big-shadow"'},
-      {title: '@Input() rounded', explanation: 'Les coins arrondis de la carte; Boolean: true(défaut)'}
+      {title: '@Input() timer', explanation: 'Temps par défaut d\'affichage des alertes; Number: 5000(défaut)'},
+      {title: 'Classe ARAlert', explanation: '{type, title, text, timer}'},
+      {title: 'Type d\'alerte', explanation: '\'danger\'(défaut), \'warning\', \'info\', \'success\''},
+      {title: 'Service ARAlertService', explanation: 'Fonction addAlert(ARAlert); Affiche une alerte'}
     ]
   }
 

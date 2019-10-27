@@ -9,7 +9,10 @@ import { ARSnackBar } from 'projects/arrakis-lib/src/lib/snack-bar/snack-bar.cla
 })
 export class SnackBarComponent implements OnInit {
 
-  public htmlCode = '<ar-card [shadow]=\"\'shadow\'\" [radius]=\"\'rounded\'\">\n  <div>\n    Une carte\n  </div>\n</ar-card>';
+  public htmlCode = '<ar-snack-bar></ar-snack-bar> // One time in the application\n';
+  public tsCode = 'constructor(private snackBarService: ARSnackBarService) {\n}\n\n' +
+    'addSnackBar(type: string, title: string, text: string, timer: number) {\n' +
+    '  const snackBar = new ARSnackBar(type, title, text, timer);\n  this.snackBarService.addSnackBar(snackBar);\n}\n';
   public explanations: Array<{title: string, explanation: string}> = [];
 
   constructor(private snackBarService: ARSnackBarService) { }
@@ -17,9 +20,10 @@ export class SnackBarComponent implements OnInit {
   ngOnInit() {
     this.explanations = [
       {title: 'Balise HTML', explanation: 'ar-snack-bar'},
-      {title: 'Contenu', explanation: 'Le contenu de la carte'},
-      {title: '@Input() shadow', explanation: 'L\'ombre de la carte; String: "shadow"(défaut), "small-shadow" ou "big-shadow"'},
-      {title: '@Input() rounded', explanation: 'Les coins arrondis de la carte; Boolean: true(défaut)'}
+      {title: '@Input() timer', explanation: 'Temps par défaut d\'affichage des snackbars; Number: 5000(défaut)'},
+      {title: 'Classe ARSnackBar', explanation: '{type, title, text, timer}'},
+      {title: 'Type de snackbar', explanation: '\'danger\'(défaut), \'warning\', \'info\', \'success\''},
+      {title: 'Service ARSnackBarService', explanation: 'Fonction addSnackBar(ARSnackBar); Affiche une snackbar'}
     ]
   }
 
