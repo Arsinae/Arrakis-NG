@@ -1,0 +1,26 @@
+.snackbar-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 5%;
+  color: #424242;
+  
+  &>div {
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+
+  #danger {
+    background-color: var(--ar-danger);
+  }
+  #warning {
+    background-color: var(--ar-warning);
+  }
+  #info {
+    background-color: var(--ar-info);
+  }
+  #success {
+    background-color: var(--ar-success);
+  }
+}

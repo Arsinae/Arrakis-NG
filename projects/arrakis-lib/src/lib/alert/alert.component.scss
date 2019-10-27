@@ -1,0 +1,52 @@
+.ar-alert-container {
+  position: fixed;
+  top: 5%;
+  right: 2%;
+  width: 30%;
+  z-index: 2;
+
+  .ar-alert {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    padding: 6px;
+    margin: 6px 0;
+    color: white;
+
+    &.ar-danger-alert {
+      background-color: var(--ar-danger);
+    }
+
+    &.ar-warning-alert {
+      background-color: var(--ar-warning);
+    }
+
+    &.ar-success-alert {
+      background-color: var(--ar-success);
+    }
+
+    &.ar-info-alert {
+      background-color: var(--ar-info);
+    }
+
+    .ar-alert-close {
+      position: absolute;
+      top: 6px; right: 6px;
+    }
+
+    .ar-alert-header {
+      width: 85%;
+    }
+
+    .ar-alert-header, .ar-alert-text {
+      word-break: break-all;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .ar-alert-container {
+    width: 50%;
+    min-width: 250px;
+  }
+}

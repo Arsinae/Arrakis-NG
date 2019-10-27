@@ -1,0 +1,43 @@
+<div class="component-name">
+  SnackBar
+</div>
+
+<div class="snackbar-container">
+  <div id="success" (click)="addSnackBar('success', 'SnackBar de Succès', 'Voici une SnackBar de succès')">
+    Succès
+  </div>
+
+  <div id="info" (click)="addSnackBar('info', 'SnackBar d\'Information', 'Voici une SnackBar d\'information')">
+    Information
+  </div>
+
+  <div id="danger" (click)="addSnackBar('danger', 'SnackBar de Danger', 'Voici une SnackBar de danger', 2000)">
+    Danger
+  </div>
+
+  <div id="warning" (click)="addSnackBar('warning', 'SnackBar d\'Avertissement', 'Voici une SnackBar d\'avertissement')">
+    Warning
+  </div>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    API
+  </div>
+
+  <table class="explanation-title">
+    <tr *ngFor="let explanation of explanations">
+      <td>{{explanation.title}}</td>
+      <td>{{explanation.explanation}}</td>
+    </tr>
+  </table>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    Exemple
+  </div>
+  <div>
+    <pre><code [highlight]="htmlCode"></code></pre>
+  </div>
+</div>

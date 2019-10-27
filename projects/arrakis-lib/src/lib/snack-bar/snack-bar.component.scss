@@ -1,0 +1,56 @@
+.snackbarContainer {
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  display: flex;
+  flex-direction: column-reverse;
+  z-index: 1000;
+
+  .snackBar {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    padding: 6px;
+    margin: 6px 0;
+    color: white;
+    transition: all 0.3s ease-in-out;
+
+    .closeIcon {
+      position: absolute;
+      top: 6px; right: 6px;
+    }
+
+    .headerSnackBar {
+      width: 85%;
+    }
+
+    .headerSnackBar, .textSnackBar {
+      word-break: break-all;
+    }
+
+    &.dangerSnackBar {
+      background-color: var(--ar-danger);
+    }
+
+    &.warningSnackBar {
+      background-color: var(--ar-warning);
+    }
+
+    &.successSnackBar {
+      background-color: var(--ar-success);
+    }
+
+    &.infoSnackBar {
+      background-color: var(--ar-info);
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .snackbarContainer {
+    width: 50%;
+    min-width: 250px;
+  }
+}

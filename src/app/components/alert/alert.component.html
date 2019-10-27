@@ -1,0 +1,43 @@
+<div class="component-name">
+  Alerte
+</div>
+
+<div class="alert-container">
+  <div id="success" (click)="addAlert('success', 'Alerte de Succès', 'Voici une alerte de succès')">
+    Succès
+  </div>
+
+  <div id="info" (click)="addAlert('info', 'Alerte d\'Information', 'Voici une alerte d\'information')">
+    Information
+  </div>
+
+  <div id="danger" (click)="addAlert('danger', 'Alerte de Danger', 'Voici une alerte de danger', 2000)">
+    Danger
+  </div>
+
+  <div id="warning" (click)="addAlert('warning', 'Alerte d\'Avertissement', 'Voici une alerte d\'avertissement')">
+    Warning
+  </div>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    API
+  </div>
+
+  <table class="explanation-title">
+    <tr *ngFor="let explanation of explanations">
+      <td>{{explanation.title}}</td>
+      <td>{{explanation.explanation}}</td>
+    </tr>
+  </table>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    Exemple
+  </div>
+  <div>
+    <pre><code [highlight]="htmlCode"></code></pre>
+  </div>
+</div>

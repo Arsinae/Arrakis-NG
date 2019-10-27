@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ComponentsComponent } from './components.component';
 
 import { CardComponent} from './card/card.component';
@@ -10,6 +12,8 @@ import { HighlightModule } from 'ngx-highlightjs';
 import xml from 'highlight.js/lib/languages/xml';
 import scss from 'highlight.js/lib/languages/scss';
 import typescript from 'highlight.js/lib/languages/typescript';
+import { AlertComponent } from './alert/alert.component';
+import { SnackBarComponent } from './snack-bar/snack-bar.component';
 
 export function hljsLanguages() {
   return [
@@ -22,11 +26,15 @@ export function hljsLanguages() {
 @NgModule({
   declarations: [
     ComponentsComponent,
+    AlertComponent,
     CardComponent,
-    FlippingCardComponent
+    FlippingCardComponent,
+    SnackBarComponent
   ],
   imports: [
     CommonModule,
+    BrowserModule,
+    BrowserAnimationsModule,
     HighlightModule.forRoot({languages: hljsLanguages}),
     ArrakisLibModule
   ],

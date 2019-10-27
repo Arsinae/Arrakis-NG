@@ -1,0 +1,12 @@
+<div class="ar-alert-container" [@alertAnimation]="alerts.length">
+  <div *ngFor="let alert of alerts; let i = index" class="ar-alert ar-{{alert.alert.type}}-alert" (click)="closeAlert(i)">
+    <span class="ar-alert-close"><i class="fas fa-times"></i></span>
+    <div class="ar-alert-header">
+      <span><i class="{{getIcon(alert.alert.type)}}"></i></span>
+      {{ alert.alert.title }}
+    </div>
+    <div class="ar-alert-text">
+      {{alert.alert.text}}
+    </div>
+  </div>
+</div>
