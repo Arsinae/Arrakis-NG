@@ -2,10 +2,9 @@
 
   --ar-primary: #ba9e5a;
   --ar-secondary: #07384c;
-  --ar-primary-light: #11506a;
 
-  --ar-light-background: #e3e3e3;
-  --ar-dark-background: #404040;
+  --ar-background-color: #e3e3e3;
+  --ar-text-color: #424242;
   
   --ar-color1: #5aa2ba;
   --ar-color2: #5a5aba;
@@ -53,4 +52,60 @@
 
 .ar-big-shadow {
   box-shadow: var(--ar-big-shadow);
+}
+
+.ar-color-primary {
+  color: var(--ar-primary);
+}
+.ar-color-secondary {
+  color: var(--ar-secondary);
+}
+.ar-color-1 {
+  color: var(--ar-color1);
+}
+.ar-color-2 {
+  color: var(--ar-color2);
+}
+.ar-color-3 {
+  color: var(--ar-color3);
+}
+.ar-color-4 {
+  color: var(--ar-color4);
+}
+.ar-color-5 {
+  color: var(--ar-color5);
+}
+.ar-color-6 {
+  color: var(--ar-color6);
+}
+.ar-color-7 {
+  color: var(--ar-color7);
+}
+
+.ar-color-primary-hover:hover {
+  color: var(--ar-primary);
+}
+.ar-color-secondary-hover:hover {
+  color: var(--ar-secondary);
+}
+.ar-color-1-hover:hover {
+  color: var(--ar-color1);
+}
+.ar-color-2-hover:hover {
+  color: var(--ar-color2);
+}
+.ar-color-3-hover:hover {
+  color: var(--ar-color3);
+}
+.ar-color-4-hover:hover {
+  color: var(--ar-color4);
+}
+.ar-color-5-hover:hover {
+  color: var(--ar-color5);
+}
+.ar-color-6-hover:hover {
+  color: var(--ar-color6);
+}
+.ar-color-7-hover:hover {
+  color: var(--ar-color7);
 }
