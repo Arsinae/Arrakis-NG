@@ -3,7 +3,7 @@
 </div>
 
 <div class="table-container">
-  <ar-table [header]="header" [rows]="rows" [tableAnimation]="'vertical'" [color]="'secondary'"></ar-table>
+  <ar-table [header]="header" [rows]="rows" [tableAnimation]="'vertical'" [color]="'secondary'" (selectRow)="selectRow($event)"></ar-table>
 </div>
 
 <div class="explanation">

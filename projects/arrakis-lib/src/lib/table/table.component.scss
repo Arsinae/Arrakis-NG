@@ -17,6 +17,7 @@
   .ar-table-row {
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 
     &:hover {
       background-color: var(--ar-background-color);

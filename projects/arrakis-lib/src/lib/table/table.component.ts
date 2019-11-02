@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { trigger, transition, query, animate, keyframes, style } from '@angular/animations';
 import { ARTableHeader, ARTableRow } from './table.class';
 
@@ -39,6 +39,8 @@ export class ARTableComponent implements OnInit {
   @Input() rows: Array<ARTableRow> = [];
   @Input() tableAnimation: string = 'horizontal';
   @Input() color: string = null;
+
+  @Output() selectRow: EventEmitter<ARTableRow> = new EventEmitter<ARTableRow>();
 
   constructor() { }
 

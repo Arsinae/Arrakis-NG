@@ -4,13 +4,13 @@
   </div>
 
   <div *ngIf="tableAnimation === 'vertical'" [@verticalAnimation]="rows.length">
-    <div *ngFor="let row of rows" [ngClass]="getRowClasses(row)">
+    <div *ngFor="let row of rows" [ngClass]="getRowClasses(row)" (click)="selectRow.emit(row)">
       <div *ngFor="let headerValue of header">{{getRowValue(headerValue.name, row.row)}}</div>
     </div>
   </div>
 
   <div *ngIf="tableAnimation !== 'vertical'" [@horizontalAnimation]="tableAnimation === 'horizontal' ? rows.length : false">
-    <div *ngFor="let row of rows" [ngClass]="getRowClasses(row)">
+    <div *ngFor="let row of rows" [ngClass]="getRowClasses(row)" (click)="selectRow.emit(row)">
       <div *ngFor="let headerValue of header">{{getRowValue(headerValue.name, row.row)}}</div>
     </div>
   </div>
