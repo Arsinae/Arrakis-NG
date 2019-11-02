@@ -1,0 +1,8 @@
+<div [ngClass]="CardClass" [style.minHeight.px]="headerHeight + (imageSize / 2) + 2">
+  <div [ngClass]="HeaderClass" [style.height.px]="headerHeight">
+    <img *ngIf="imageSrc" [style.height.px]="imageSize" [style.width.px]="imageSize" [src]="imageSrc">
+  </div>
+  <div class="ar-testimonial-card-content" [style.paddingTop.px]="(imageSize / 2) + 2">
+    <ng-content></ng-content>
+  </div>
+</div>

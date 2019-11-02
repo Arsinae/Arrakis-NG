@@ -3,7 +3,7 @@
   --ar-primary: #ba9e5a;
   --ar-secondary: #07384c;
 
-  --ar-background-color: #e3e3e3;
+  --ar-background-color: #f2f2f2;
   --ar-text-color: #424242;
   
   --ar-color1: #5aa2ba;
@@ -108,4 +108,44 @@
 }
 .ar-color-7-hover:hover {
   color: var(--ar-color7);
+}
+
+.ar-background-color-primary {
+  background-color: var(--ar-primary);
+}
+.ar-background-color-secondary {
+  background-color: var(--ar-secondary);
+}
+.ar-background-color-1 {
+  background-color: var(--ar-color1);
+}
+.ar-background-color-2 {
+  background-color: var(--ar-color2);
+}
+.ar-background-color-3 {
+  background-color: var(--ar-color3);
+}
+.ar-background-color-4 {
+  background-color: var(--ar-color4);
+}
+.ar-background-color-5 {
+  background-color: var(--ar-color5);
+}
+.ar-background-color-6 {
+  background-color: var(--ar-color6);
+}
+.ar-background-color-7 {
+  background-color: var(--ar-color7);
+}
+.ar-background-color-gradient1 {
+  background-image: var(--ar-gradient1);
+}
+.ar-background-color-gradient2 {
+  background-image: var(--ar-gradient2);
+}
+.ar-background-color-gradient3 {
+  background-image: var(--ar-gradient3);
+}
+.ar-background-color-gradient4 {
+  background-image: var(--ar-gradient4);
 }

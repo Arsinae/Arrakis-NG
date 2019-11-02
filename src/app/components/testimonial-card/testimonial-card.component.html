@@ -1,0 +1,31 @@
+<div class="component-name">
+  Carte Retournable
+</div>
+
+<div class="card-container">
+  <ar-testimonial-card [headerHeight]="100" color="gradient3" imageSize="75" imageSrc="assets/imgs/caladan.jpg">
+    <div>Caladan</div>
+  </ar-testimonial-card>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    API
+  </div>
+
+  <table class="explanation-title">
+    <tr *ngFor="let explanation of explanations">
+      <td>{{explanation.title}}</td>
+      <td>{{explanation.explanation}}</td>
+    </tr>
+  </table>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    Exemple
+  </div>
+  <div>
+    <pre><code [highlight]="htmlCode"></code></pre>
+  </div>
+</div>

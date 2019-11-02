@@ -27,3 +27,7 @@ export * from './lib/snack-bar/snack-bar.class';
 export * from './lib/table/table.module';
 export * from './lib/table/table.component';
 export * from './lib/table/table.class';
+
+//    TESTIMONIAL CARD
+export * from './lib/testimonial-card/testimonial-card.module';
+export * from './lib/testimonial-card/testimonial-card.component';

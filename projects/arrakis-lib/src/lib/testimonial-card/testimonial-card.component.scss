@@ -1,0 +1,14 @@
+.ar-testimonial-card-container {
+  .ar-testimonial-card-header {
+    position: relative;
+    
+    &>img {
+      position: absolute;
+      bottom: 0; left: 50%;
+      transform: translate(-50%, 50%);
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid var(--ar-background-color);
+    }
+  }
+}
