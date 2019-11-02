@@ -7,20 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestimonialCardComponent implements OnInit {
 
-  public htmlCode = '<ar-flipping-card [height]="150" [shadow]="\'small-shadow\'" [rounded]="true">\n  <div front>\n    Une carte\n  </div>\n' +
-  '  <div back>\n    Arrière d\'une carte\n  </div>\n</ar-flipping-card>';
+  public htmlCode = '<ar-testimonial-card [headerHeight]="100" color="gradient3" imageSize="75" imageSrc="assets/imgs/caladan.jpg">\n' +
+    '  <div>Caladan</div>\n</ar-testimonial-card>\n';
   public explanations: Array<{title: string, explanation: string}> = [];
 
   constructor() { }
 
   ngOnInit() {
     this.explanations = [
-      {title: 'Balise HTML', explanation: 'ar-card'},
+      {title: 'Balise HTML', explanation: 'ar-testimonial-card'},
       {title: 'Contenu', explanation: 'Le contenu de la carte'},
       {title: '@Input() headerHeight', explanation: 'Hauteur de l\'en-tête de la carte en px; Number: 50(défaut)'},
+      {title: '@Input() color', explanation: 'Couleur de l\'en-tête; String: primary(défaut), secondary, 1-7, gradient1-4'},
+      {title: '@Input() imageSize', explanation: 'Taille de l\'image en px; Number: 50(défaut)'},
+      {title: '@Input() imageSrc', explanation: 'Source de l\'image; String'},
       {title: '@Input() shadow', explanation: 'L\'ombre de la carte; String: "shadow"(défaut), "small-shadow" ou "big-shadow"'},
-      {title: '@Input() rounded', explanation: 'Les coins arrondis de la carte; Boolean: true(défaut)'},
-      {title: '@Input() bounce', explanation: 'Mets l\'animation de rebondissement sur la carte; Boolean: false(défaut)'}
     ]
   }
 
