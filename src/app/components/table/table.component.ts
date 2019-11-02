@@ -19,10 +19,12 @@ export class TableComponent implements OnInit {
     {row: [{id: 'name', value: 'Liet Kynes'}, {id: 'allegiance', value: 'Fremen'}, {id: 'origine', value: 'Arrakis'}]}
   ]
 
-  public htmlCode = '<ar-alert></ar-alert> // One time in the application\n';
-  public tsCode = 'constructor(private alertService: ARAlertService) {\n}\n\n' +
-    'addAlert(type: string, title: string, text: string, timer: number) {\n' +
-    '  const alert = new ARSnackBar(type, title, text, timer);\n  this.alertService.addAlert(alert);\n}\n';
+  public htmlCode = '<ar-table [header]="header" [rows]="rows" [tableAnimation]="\'vertical\'" [color]="\'secondary\'"></ar-table>\n';
+  public tsCode = 'public header: Array<ARTableHeader> = [\n  {name: \'name\', display: \'Nom\'},\n  ' +
+    '{name: \'allegiance\', display: \'Allégeance\'},\n  {name: \'origine\', display: \'Origine\'}\n];\n' +
+    'public row: Array<ARTableRow> = [\n  {row: [{id: \'name\', value: \'Darwi Odrade\'}, {id: \'allegiance\', value: \'Bene Gesserit\'},' +
+    ' {id: \'origine\', value: \'Gammu\'}], color: \'4\'},\n  {row: [{id: \'name\', value: \'Duncan Idaho\'},' +
+    ' {id: \'allegiance\', value: \'Maison Atréides\'}, {id: \'origine\', value: \'Giedi Prime\'}], color: \'primary\'}\n]\n';
   public explanations: Array<{title: string, explanation: string}> = [];
 
   constructor() { }
