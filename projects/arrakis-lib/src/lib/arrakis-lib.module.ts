@@ -9,6 +9,7 @@ import { ARTableModule } from './table/table.module';
 
 import { ARAlertService } from './alert/alert.service';
 import { ARSnackBarService } from './snack-bar/snack-bar.service';
+import { ARAccordionModule } from './accordion/accordion.module';
 
 @NgModule({
   imports: [
@@ -16,14 +17,16 @@ import { ARSnackBarService } from './snack-bar/snack-bar.service';
     ARFlippingCardModule,
     ARTestimonialCardModule,
     ARTableModule,
+    ARAccordionModule,
     ARAlertModule,
-    ARSnackBarModule
+    ARSnackBarModule,
   ],
   exports: [
     ARCardModule,
     ARFlippingCardModule,
     ARTestimonialCardModule,
     ARTableModule,
+    ARAccordionModule,
     ARAlertModule,
     ARSnackBarModule
   ]

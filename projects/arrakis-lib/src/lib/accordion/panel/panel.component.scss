@@ -1,0 +1,39 @@
+.ar-panel {
+  width: 100%;
+  box-shadow: var(--ar-small-shadow);
+  padding: var(--ar-padding);
+  box-sizing: border-box;
+
+  &.ar-open {
+    box-shadow: var(--ar-shadow);
+    margin: var(--ar-padding) 0;
+
+    .ar-panel-title {
+      padding-bottom: var(--ar-padding);
+    }
+  }
+
+  .ar-panel-title {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 17px;
+
+    .ar-open-icon {
+      padding-right: var(--ar-padding);
+      transition: all 0.3s linear;
+
+      &.rotated {
+        transform: rotate(-180deg);
+        padding: 0 0 0 var(--ar-padding);
+      }
+    }
+  }
+
+  .ar-text-container {
+    overflow: hidden;
+    max-height: 0;
+    padding-right: 30px;
+    transition: max-height 0.2s ease-in;
+  }
+}

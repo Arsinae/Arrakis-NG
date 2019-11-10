@@ -3,6 +3,11 @@
  */
 export * from './lib/arrakis-lib.module';
 
+//    ACCORDION
+export * from './lib/accordion/accordion.module';
+export * from './lib/accordion/accordion.component';
+export * from './lib/accordion/panel/panel.component';
+
 //    ALERT
 export * from './lib/alert/alert.module';
 export * from './lib/alert/alert.service';

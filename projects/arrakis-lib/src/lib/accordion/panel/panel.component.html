@@ -1,0 +1,15 @@
+<div class="ar-panel" [class.open]="ar-open">
+  <div class="ar-panel-title" (click)="changeState()">
+    <ng-content select="[title]"></ng-content>
+
+    <span class="ar-open-icon" [class.rotated]="open">
+      <span><i class="fas fa-chevron-down"></i></span>
+    </span>
+  </div>
+
+  <div class="ar-text-container" #textContainer [style.maxHeight.px]="ContainerHeight">
+    <div #textContent>
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

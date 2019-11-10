@@ -16,6 +16,7 @@ import { AlertComponent } from './alert/alert.component';
 import { SnackBarComponent } from './snack-bar/snack-bar.component';
 import { TableComponent } from './table/table.component';
 import { TestimonialCardComponent } from './testimonial-card/testimonial-card.component';
+import { AccordionComponent } from './accordion/accordion.component';
 
 export function hljsLanguages() {
   return [
@@ -33,7 +34,8 @@ export function hljsLanguages() {
     FlippingCardComponent,
     SnackBarComponent,
     TableComponent,
-    TestimonialCardComponent
+    TestimonialCardComponent,
+    AccordionComponent
   ],
   imports: [
     CommonModule,
