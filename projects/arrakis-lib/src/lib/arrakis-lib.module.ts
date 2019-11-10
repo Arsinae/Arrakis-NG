@@ -1,15 +1,16 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 
+import { ARAccordionModule } from './accordion/accordion.module';
 import { ARAlertModule } from './alert/alert.module';
 import { ARCardModule } from './card/card.module';
 import { ARFlippingCardModule } from './flipping-card/flipping-card.module';
 import { ARTestimonialCardModule } from './testimonial-card/testimonial-card.module';
 import { ARSnackBarModule } from './snack-bar/snack-bar.module';
 import { ARTableModule } from './table/table.module';
+import { ARTooltipModule } from './tooltip/tooltip.module';
 
 import { ARAlertService } from './alert/alert.service';
 import { ARSnackBarService } from './snack-bar/snack-bar.service';
-import { ARAccordionModule } from './accordion/accordion.module';
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import { ARAccordionModule } from './accordion/accordion.module';
     ARTestimonialCardModule,
     ARTableModule,
     ARAccordionModule,
+    ARTooltipModule,
     ARAlertModule,
     ARSnackBarModule,
   ],
@@ -27,6 +29,7 @@ import { ARAccordionModule } from './accordion/accordion.module';
     ARTestimonialCardModule,
     ARTableModule,
     ARAccordionModule,
+    ARTooltipModule,
     ARAlertModule,
     ARSnackBarModule
   ]

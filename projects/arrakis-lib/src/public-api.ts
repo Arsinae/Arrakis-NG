@@ -36,3 +36,7 @@ export * from './lib/table/table.class';
 //    TESTIMONIAL CARD
 export * from './lib/testimonial-card/testimonial-card.module';
 export * from './lib/testimonial-card/testimonial-card.component';
+
+//    TOOLTIP
+export * from './lib/tooltip/tooltip.module'
+export * from './lib/tooltip/tooltip.component'

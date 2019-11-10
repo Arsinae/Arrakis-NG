@@ -1,0 +1,8 @@
+<span [classList]="tooltipClassList()">
+  <span class="ar-tooltip-text">
+    <ng-content select="[text]"></ng-content>
+  </span>
+  <span class="ar-tooltip-explanation" [style.width.px]="width">
+    <ng-content select="[explanation]"></ng-content>
+  </span>
+</span>

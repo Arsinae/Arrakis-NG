@@ -17,6 +17,7 @@ import { SnackBarComponent } from './snack-bar/snack-bar.component';
 import { TableComponent } from './table/table.component';
 import { TestimonialCardComponent } from './testimonial-card/testimonial-card.component';
 import { AccordionComponent } from './accordion/accordion.component';
+import { TooltipComponent } from './tooltip/tooltip.component';
 
 export function hljsLanguages() {
   return [
@@ -35,7 +36,8 @@ export function hljsLanguages() {
     SnackBarComponent,
     TableComponent,
     TestimonialCardComponent,
-    AccordionComponent
+    AccordionComponent,
+    TooltipComponent
   ],
   imports: [
     CommonModule,

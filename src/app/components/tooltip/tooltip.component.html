@@ -1,0 +1,57 @@
+<div class="component-name">
+  ToolTip
+</div>
+
+<div class="tooltip-container">
+  <div>
+    <span>Paul est devenu le "
+      <ar-tooltip [position]="'top'" [width]="75">
+        <span text>Muad'Dib</span>
+        <span explanation>Souris du désert.</span>
+      </ar-tooltip>
+      " pour les Fremens.
+    </span>
+  </div>
+
+  <div>
+    <span>Paul est devenu le "
+      <ar-tooltip [color]="2" [position]="'bottom'" [width]="150">
+        <span text>Muad'Dib</span>
+        <span explanation>Souris du désert.</span>
+      </ar-tooltip>
+      " pour les Fremens.
+    </span>
+  </div>
+
+  <div>
+    <span>Paul est devenu le "
+      <ar-tooltip [color]="6" [position]="'left'" [style]="'underline'">
+        <span text>Muad'Dib</span>
+        <span explanation>Souris du désert.</span>
+      </ar-tooltip>
+      " pour les Fremens.
+    </span>
+  </div>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    API
+  </div>
+
+  <table class="explanation-title">
+    <tr *ngFor="let explanation of explanations">
+      <td>{{explanation.title}}</td>
+      <td>{{explanation.explanation}}</td>
+    </tr>
+  </table>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    Exemple
+  </div>
+  <div>
+    <pre><code [highlight]="htmlCode"></code></pre>
+  </div>
+</div>
