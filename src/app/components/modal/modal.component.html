@@ -1,0 +1,43 @@
+<div class="component-name">
+  Modal
+</div>
+
+<ar-modal #modal [width]="75" [maxHeight]="50">
+  <div (click)="console()" class="modal-content">L'ordre du Bene Gesserit a été fondé par Raquella Berto-Anirul, petite-fille de Vorian Atréides.
+     Après avoir été infectée par le Fléau de Rossak, elle est transportée dans un cénote contenant une eau spécifique par les Mal-Nés,
+     où elle apprend à maîtriser chacune de ses cellules afin de combattre le poison qui est en elle. C'est la première utilisation
+     connue des modifications de la biochimie interne couramment employées par les Sœurs (notamment au cours du rite de l’Agonie de l'épice).
+     C'est également à ce moment qu'elle accède pour la première fois à la « Mémoire Seconde » et à l'utilisation de la « Voix » face à Ticia Cenva,
+      la chef déchue des Sorcières de Rossak.
+    <br />
+    Par la suite, après avoir recouvré ses forces, Raquella Berto-Anirul convainc les sorcières de Rossak ayant survécu à l'épidémie d'unir leur forces.
+    Celles-ci apporteront à l'Ordre du Bene Gesserit leurs très nombreuses archives génétiques.
+  </div>
+</ar-modal>
+
+<div class="modal-container">
+  <span (click)="openModal()">Ouvrez la modal pour découvrir l'origine du Bene Gesserit</span>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    API
+  </div>
+
+  <table class="explanation-title">
+    <tr *ngFor="let explanation of explanations">
+      <td>{{explanation.title}}</td>
+      <td>{{explanation.explanation}}</td>
+    </tr>
+  </table>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    Exemple
+  </div>
+  <div>
+    <pre><code [highlight]="htmlCode"></code></pre>
+    <pre><code [highlight]="tsCode"></code></pre>
+  </div>
+</div>

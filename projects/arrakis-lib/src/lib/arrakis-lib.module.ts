@@ -4,9 +4,10 @@ import { ARAccordionModule } from './accordion/accordion.module';
 import { ARAlertModule } from './alert/alert.module';
 import { ARCardModule } from './card/card.module';
 import { ARFlippingCardModule } from './flipping-card/flipping-card.module';
-import { ARTestimonialCardModule } from './testimonial-card/testimonial-card.module';
+import { ARModalModule } from './modal/modal.module'
 import { ARSnackBarModule } from './snack-bar/snack-bar.module';
 import { ARTableModule } from './table/table.module';
+import { ARTestimonialCardModule } from './testimonial-card/testimonial-card.module';
 import { ARTooltipModule } from './tooltip/tooltip.module';
 
 import { ARAlertService } from './alert/alert.service';
@@ -20,6 +21,7 @@ import { ARSnackBarService } from './snack-bar/snack-bar.service';
     ARTableModule,
     ARAccordionModule,
     ARTooltipModule,
+    ARModalModule,
     ARAlertModule,
     ARSnackBarModule,
   ],
@@ -30,6 +32,7 @@ import { ARSnackBarService } from './snack-bar/snack-bar.service';
     ARTableModule,
     ARAccordionModule,
     ARTooltipModule,
+    ARModalModule,
     ARAlertModule,
     ARSnackBarModule
   ]

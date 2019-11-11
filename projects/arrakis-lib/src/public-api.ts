@@ -22,6 +22,10 @@ export * from './lib/card/card.component';
 export * from './lib/flipping-card/flipping-card.module';
 export * from './lib/flipping-card/flipping-card.component';
 
+//    MODAL
+export * from './lib/modal/modal.module';
+export * from './lib/modal/modal.component';
+
 //    SNACKBAR
 export * from './lib/snack-bar/snack-bar.module';
 export * from './lib/snack-bar/snack-bar.component';
