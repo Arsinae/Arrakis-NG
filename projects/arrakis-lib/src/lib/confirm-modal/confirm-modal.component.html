@@ -1,5 +1,5 @@
 <div class="ar-modal-container" [class.ar-open]="isOpen()" (click)="closeModal()">
-    <div class="ar-modal-panel" [style.width.%]="width" [style.maxHeight.%]="maxHeight" (click)="clickOnModal($event)">
+    <div class="ar-modal-panel" [style.width.%]="width" [style.maxHeight.vh]="maxHeight" (click)="clickOnModal($event)">
       <ng-content></ng-content>
       <div class="ar-button-line">
         <div (click)="cancel($event)">{{cancelText}}</div>
