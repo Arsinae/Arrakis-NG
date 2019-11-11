@@ -10,15 +10,21 @@ export class ModalComponent implements OnInit {
 
   @ViewChild('modal', {static: false}) modal: ARModalComponent;
 
-  public htmlCode = '<ar-snack-bar></ar-snack-bar> // One time in the application\n';
-  public tsCode = 'constructor(private snackBarService: ARSnackBarService) {\n}\n\n' +
-    'addSnackBar(type: string, title: string, text: string, timer: number) {\n' +
-    '  const snackBar = new ARSnackBar(type, title, text, timer);\n  this.snackBarService.addSnackBar(snackBar);\n}\n';
+  public htmlCode = '<ar-modal #modal>\n  <div>\n    Contenu de la modal\n  </div>\n</ar-modal>\n\n<div (click)="openModal()">Ouvrir la modal</div>';
+  public tsCode = '@ViewChild(\'modal\', {static: false}) modal: ARModalComponent;\n\n' +
+    'openModal() {\n  this.modal.openModal();\n}\n';
   public explanations: Array<{title: string, explanation: string}> = [];
 
   constructor() { }
 
   ngOnInit() {
+    this.explanations = [
+      {title: 'Balise HTML', explanation: 'ar-modal'},
+      {title: 'Content', explanation: 'Contenu de la Modal'},
+      {title: '@Input() width', explanation: 'Largeur de la modal en pourcentage; Number: 50(défaut)'},
+      {title: '@Input() maxHeight', explanation: 'Hauteur maximale de la modal en pourcentage; Number: 80(défaut)'},
+      {title: '@Output() closedModal', explanation: 'Evènement émis lors de la fermeture de la modal'}
+    ]
   }
 
   openModal() {
