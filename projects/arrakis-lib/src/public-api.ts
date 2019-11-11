@@ -18,6 +18,10 @@ export * from './lib/alert/alert.class';
 export * from './lib/card/card.module';
 export * from './lib/card/card.component';
 
+//    CONFIRM MODAL
+export * from './lib/confirm-modal/confirm-modal.module';
+export * from './lib/confirm-modal/confirm-modal.component';
+
 //    FLIPPING CARD
 export * from './lib/flipping-card/flipping-card.module';
 export * from './lib/flipping-card/flipping-card.component';

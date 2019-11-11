@@ -1,0 +1,40 @@
+<div class="component-name">
+    Confirm Modal
+  </div>
+  
+  <ar-confirm-modal #modal [width]="75" [maxHeight]="50" [acceptText]="'Valider'" [cancelText]="'Annuler'">
+    <div (click)="console()" class="modal-content">
+        Les Fremen suivent un code d’honneur rigoureux. Ainsi, ils répertorient des « insultes mortelles » dont l’affront ne 
+        peut être lavé que par la mort. Un Fremen peut avoir plusieurs femmes, mais s’il ravit celle d’un autre, un duel s’ensuit. 
+        Ces combats se font au Krys, arme taillée dans la dent d’un ver des sables, rare et précieuse, censée se dissoudre à la 
+        mort de son propriétaire. Chaque Fremen doit gagner le droit de porter un Krys (souvent en chevauchant un ver). Une fois 
+        tiré du fourreau, le Krys ne doit pas y retourner sans avoir goûté le sang.
+    </div>
+  </ar-confirm-modal>
+  
+  <div class="modal-container">
+    <span (click)="openModal()">Ouvrez la modal pour devenir un Frémen</span>
+  </div>
+  
+  <div class="explanation">
+    <div class="explanation-header">
+      API
+    </div>
+  
+    <table class="explanation-title">
+      <tr *ngFor="let explanation of explanations">
+        <td>{{explanation.title}}</td>
+        <td>{{explanation.explanation}}</td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="explanation">
+    <div class="explanation-header">
+      Exemple
+    </div>
+    <div>
+      <pre><code [highlight]="htmlCode"></code></pre>
+      <pre><code [highlight]="tsCode"></code></pre>
+    </div>
+  </div>

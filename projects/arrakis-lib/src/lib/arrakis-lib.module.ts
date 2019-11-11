@@ -3,6 +3,7 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { ARAccordionModule } from './accordion/accordion.module';
 import { ARAlertModule } from './alert/alert.module';
 import { ARCardModule } from './card/card.module';
+import { ARConfirmModalModule } from './confirm-modal/confirm-modal.module'
 import { ARFlippingCardModule } from './flipping-card/flipping-card.module';
 import { ARModalModule } from './modal/modal.module'
 import { ARSnackBarModule } from './snack-bar/snack-bar.module';
@@ -22,6 +23,7 @@ import { ARSnackBarService } from './snack-bar/snack-bar.service';
     ARAccordionModule,
     ARTooltipModule,
     ARModalModule,
+    ARConfirmModalModule,
     ARAlertModule,
     ARSnackBarModule,
   ],
@@ -33,6 +35,7 @@ import { ARSnackBarService } from './snack-bar/snack-bar.service';
     ARAccordionModule,
     ARTooltipModule,
     ARModalModule,
+    ARConfirmModalModule,
     ARAlertModule,
     ARSnackBarModule
   ]

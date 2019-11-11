@@ -19,6 +19,7 @@ import { TestimonialCardComponent } from './testimonial-card/testimonial-card.co
 import { AccordionComponent } from './accordion/accordion.component';
 import { TooltipComponent } from './tooltip/tooltip.component';
 import { ModalComponent } from './modal/modal.component';
+import { ConfirmModalComponent } from './confirm-modal/confirm-modal.component';
 
 export function hljsLanguages() {
   return [
@@ -39,7 +40,8 @@ export function hljsLanguages() {
     TestimonialCardComponent,
     AccordionComponent,
     TooltipComponent,
-    ModalComponent
+    ModalComponent,
+    ConfirmModalComponent
   ],
   imports: [
     CommonModule,
