@@ -1,0 +1,5 @@
+<div class="ar-progress-bar" [style.height.px]="height + (2*padding)" [style.padding.px]="padding">
+  <span [ngClass]="ProgressClasses" [style.width.%]="progress">
+    <span *ngIf="display" class="ar-progress-text">{{ progress }}%</span>
+  </span>
+</div>

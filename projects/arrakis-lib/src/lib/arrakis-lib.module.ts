@@ -6,6 +6,7 @@ import { ARCardModule } from './card/card.module';
 import { ARConfirmModalModule } from './confirm-modal/confirm-modal.module'
 import { ARFlippingCardModule } from './flipping-card/flipping-card.module';
 import { ARModalModule } from './modal/modal.module'
+import { ARProgressBarModule } from './progress-bar/progress-bar.module';
 import { ARSnackBarModule } from './snack-bar/snack-bar.module';
 import { ARTableModule } from './table/table.module';
 import { ARTestimonialCardModule } from './testimonial-card/testimonial-card.module';
@@ -22,6 +23,7 @@ import { ARSnackBarService } from './snack-bar/snack-bar.service';
     ARTableModule,
     ARAccordionModule,
     ARTooltipModule,
+    ARProgressBarModule,
     ARModalModule,
     ARConfirmModalModule,
     ARAlertModule,
@@ -34,6 +36,7 @@ import { ARSnackBarService } from './snack-bar/snack-bar.service';
     ARTableModule,
     ARAccordionModule,
     ARTooltipModule,
+    ARProgressBarModule,
     ARModalModule,
     ARConfirmModalModule,
     ARAlertModule,

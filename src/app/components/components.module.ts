@@ -20,6 +20,7 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { TooltipComponent } from './tooltip/tooltip.component';
 import { ModalComponent } from './modal/modal.component';
 import { ConfirmModalComponent } from './confirm-modal/confirm-modal.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 export function hljsLanguages() {
   return [
@@ -41,7 +42,8 @@ export function hljsLanguages() {
     AccordionComponent,
     TooltipComponent,
     ModalComponent,
-    ConfirmModalComponent
+    ConfirmModalComponent,
+    ProgressBarComponent
   ],
   imports: [
     CommonModule,

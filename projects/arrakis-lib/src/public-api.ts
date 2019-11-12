@@ -30,6 +30,10 @@ export * from './lib/flipping-card/flipping-card.component';
 export * from './lib/modal/modal.module';
 export * from './lib/modal/modal.component';
 
+//    PROGRESS BAR
+export * from './lib/progress-bar/progress-bar.module';
+export * from './lib/progress-bar/progress-bar.component';
+
 //    SNACKBAR
 export * from './lib/snack-bar/snack-bar.module';
 export * from './lib/snack-bar/snack-bar.component';

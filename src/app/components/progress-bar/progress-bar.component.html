@@ -1,0 +1,29 @@
+<div class="component-name">
+  ToolTip
+</div>
+
+<div class="progress-bar-container">
+  <ar-progress-bar color="gradient1"></ar-progress-bar>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    API
+  </div>
+
+  <table class="explanation-title">
+    <tr *ngFor="let explanation of explanations">
+      <td>{{explanation.title}}</td>
+      <td>{{explanation.explanation}}</td>
+    </tr>
+  </table>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    Exemple
+  </div>
+  <div>
+    <pre><code [highlight]="htmlCode"></code></pre>
+  </div>
+</div>
