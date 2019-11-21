@@ -1,0 +1,6 @@
+<div class="ar-breadcrumb">
+  <ng-container *ngFor="let step of breadcrumbs; let lastStep = last;">
+    <div class="ar-step-text ar-color-{{color}}-hover" (click)="linkSelected.emit(step.link)">{{step.text}}</div>
+    <div class="ar-stepper" *ngIf="!lastStep"></div>
+  </ng-container>
+</div>

@@ -1,0 +1,38 @@
+
+.ar-breadcrumb {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  color: var(--text-color);
+
+  .ar-step-text {
+    padding: var(--ar-padding);
+    cursor: pointer;
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: transparent;
+    border-radius: var(--ar-padding);
+    transition: all linear .3s;
+    
+    &:last-child {
+      font-weight: bold;
+    }
+
+    &:hover {
+      background-color: var(--ar-background-color);
+    }
+  }
+
+  .ar-stepper {
+    font-weight: bold;
+    border-top: 3px solid;
+    border-right: 3px solid;
+    width: 8px; height: 8px;
+    transform: rotate(45deg);
+    margin-right: var(--ar-padding);
+    border-color: var(--ar-text-color);
+  }
+}

@@ -14,6 +14,11 @@ export * from './lib/alert/alert.service';
 export * from './lib/alert/alert.component';
 export * from './lib/alert/alert.class';
 
+//    BREADCRUMB
+export * from './lib/breadcrumb/breadcrumb.module';
+export * from './lib/breadcrumb/breadcrumb.component';
+export * from './lib/breadcrumb/breadcrumb.class';
+
 //    CARD
 export * from './lib/card/card.module';
 export * from './lib/card/card.component';
