@@ -22,6 +22,7 @@ import { ModalComponent } from './modal/modal.component';
 import { ConfirmModalComponent } from './confirm-modal/confirm-modal.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { NotationComponent } from './notation/notation.component';
 
 export function hljsLanguages() {
   return [
@@ -45,7 +46,8 @@ export function hljsLanguages() {
     ModalComponent,
     ConfirmModalComponent,
     ProgressBarComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    NotationComponent
   ],
   imports: [
     CommonModule,

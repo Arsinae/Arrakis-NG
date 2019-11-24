@@ -1,0 +1,6 @@
+<div [style.fontSize.px]="size" (mouseleave)="resetNote()">
+  <span [ngClass]="StarClasses" *ngFor="let star of StarValue; let i = index"
+   (click)="getNote(i)" (mouseenter)="hoverNote(i)">
+    <i [class]="star"></i>
+  </span>
+</div>

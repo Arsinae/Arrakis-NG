@@ -15,6 +15,7 @@ import { ARTooltipModule } from './tooltip/tooltip.module';
 
 import { ARAlertService } from './alert/alert.service';
 import { ARSnackBarService } from './snack-bar/snack-bar.service';
+import { ARNotationModule } from './notation/notation.module';
 
 @NgModule({
   imports: [
@@ -26,6 +27,7 @@ import { ARSnackBarService } from './snack-bar/snack-bar.service';
     ARBreadcrumbModule,
     ARTooltipModule,
     ARProgressBarModule,
+    ARNotationModule,
     ARModalModule,
     ARConfirmModalModule,
     ARAlertModule,
@@ -40,6 +42,7 @@ import { ARSnackBarService } from './snack-bar/snack-bar.service';
     ARBreadcrumbModule,
     ARTooltipModule,
     ARProgressBarModule,
+    ARNotationModule,
     ARModalModule,
     ARConfirmModalModule,
     ARAlertModule,

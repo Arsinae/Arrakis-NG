@@ -35,6 +35,10 @@ export * from './lib/flipping-card/flipping-card.component';
 export * from './lib/modal/modal.module';
 export * from './lib/modal/modal.component';
 
+//    NOTATION
+export * from './lib/notation/notation.module';
+export * from './lib/notation/notation.component';
+
 //    PROGRESS BAR
 export * from './lib/progress-bar/progress-bar.module';
 export * from './lib/progress-bar/progress-bar.component';

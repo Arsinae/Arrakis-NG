@@ -26,7 +26,7 @@ export class BreadcrumbComponent implements OnInit {
       {title: 'Balise HTML', explanation: 'ar-breadcrumb'},
       {title: 'Classe ARBreadcrumbElement', explanation: '{text: string, link: string}'},
       {title: '@Input() breadcrumbs', explanation: 'Elements du Breadcrumbs; Array<ARBreadcrumbElement>'},
-      {title: '@Input() color', explanation: 'Couleur du texte; String: primary(défaut), secondary, 1-7'},
+      {title: '@Input() color', explanation: 'Couleur du texte; String: primary(défaut), secondary, 1-7, gradient1-4'},
       {title: '@Output() linkSelected', explanation: 'Evenement émis lors du clic sur un élément du Breadcrumb'}
     ];
   }
