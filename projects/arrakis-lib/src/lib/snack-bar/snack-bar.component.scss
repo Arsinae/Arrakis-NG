@@ -1,4 +1,4 @@
-.snackbarContainer {
+.ar-snackbar-container {
   position: fixed;
   bottom: 5%;
   left: 50%;
@@ -8,7 +8,7 @@
   flex-direction: column-reverse;
   z-index: 1000;
 
-  .snackBar {
+  .ar-snackbar {
     position: relative;
     cursor: pointer;
     width: 100%;
@@ -16,34 +16,19 @@
     margin: 6px 0;
     color: white;
     transition: all 0.3s ease-in-out;
+    opacity: .8;
 
-    .closeIcon {
+    .ar-close-icon {
       position: absolute;
       top: 6px; right: 6px;
     }
 
-    .headerSnackBar {
+    .ar-header-snackbar {
       width: 85%;
     }
 
-    .headerSnackBar, .textSnackBar {
+    .ar-header-snackbar, .ar-text-snackbar {
       word-break: break-all;
-    }
-
-    &.dangerSnackBar {
-      background-color: var(--ar-danger);
-    }
-
-    &.warningSnackBar {
-      background-color: var(--ar-warning);
-    }
-
-    &.successSnackBar {
-      background-color: var(--ar-success);
-    }
-
-    &.infoSnackBar {
-      background-color: var(--ar-info);
     }
   }
 }

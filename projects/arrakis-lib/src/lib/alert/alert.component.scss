@@ -12,22 +12,7 @@
     padding: 6px;
     margin: 6px 0;
     color: white;
-
-    &.ar-danger-alert {
-      background-color: var(--ar-danger);
-    }
-
-    &.ar-warning-alert {
-      background-color: var(--ar-warning);
-    }
-
-    &.ar-success-alert {
-      background-color: var(--ar-success);
-    }
-
-    &.ar-info-alert {
-      background-color: var(--ar-info);
-    }
+    opacity: .8;
 
     .ar-alert-close {
       position: absolute;

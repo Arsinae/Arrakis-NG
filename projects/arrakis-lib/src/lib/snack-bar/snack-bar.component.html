@@ -1,11 +1,11 @@
-<div class="snackbarContainer" [@snackBarAnimation]="snackBars.length">
-  <div *ngFor="let snackBar of snackBars; let i = index" class="snackBar {{snackBar.snack.type}}SnackBar" (click)="closeSnackBar(i)">
-    <span class="closeIcon"><i class="fas fa-times"></i></span>
-    <div class="headerSnackBar">
+<div class="ar-snackbar-container" [@snackBarAnimation]="snackBars.length">
+  <div *ngFor="let snackBar of snackBars; let i = index" class="ar-snackbar ar-background-color-{{snackBar.snack.type}}" (click)="closeSnackBar(i)">
+    <span class="ar-close-icon"><i class="fas fa-times"></i></span>
+    <div class="ar-header-snackbar">
       <span><i class="{{getIcon(snackBar.snack.type)}}"></i></span>
       {{ snackBar.snack.title }}
     </div>
-    <div class="textSnackBar">
+    <div class="ar-text-snackbar">
       {{snackBar.snack.text}}
     </div>
   </div>

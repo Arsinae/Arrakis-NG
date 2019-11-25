@@ -2,8 +2,8 @@
     <div class="ar-modal-panel" [style.width.%]="width" [style.maxHeight.vh]="maxHeight" (click)="clickOnModal($event)">
       <ng-content></ng-content>
       <div class="ar-button-line">
-        <div (click)="cancel($event)">{{cancelText}}</div>
-        <div (click)="accept($event)">{{acceptText}}</div>
+        <div class="ar-background-color-danger" (click)="cancel($event)">{{cancelText}}</div>
+        <div class="ar-background-color-success" (click)="accept($event)">{{acceptText}}</div>
       </div>
     </div>
   </div>

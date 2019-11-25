@@ -26,6 +26,8 @@
       padding:  var(--ar-padding);
       flex-wrap: wrap-reverse;
       text-align: center;
+      color: white;
+      cursor: pointer;
 
       &>* {
         width: 30%;
