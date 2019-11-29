@@ -1,0 +1,32 @@
+<div class="component-name">
+  Bouton
+</div>
+
+<div class="button-container">
+  <ar-button>Premier Bouton</ar-button>
+  <ar-button color="gradient4" size="big" [rounded]="true">Deuxième bouton</ar-button>
+  <ar-button color="success" display="outline" [rounded]="true">Troisième bouton</ar-button>
+  <ar-button color="danger" size="small">Quatrième bouton</ar-button>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    API
+  </div>
+
+  <table class="explanation-title">
+    <tr *ngFor="let explanation of explanations">
+      <td>{{explanation.title}}</td>
+      <td>{{explanation.explanation}}</td>
+    </tr>
+  </table>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    Exemple
+  </div>
+  <div>
+    <pre><code [highlight]="htmlCode"></code></pre>
+  </div>
+</div>

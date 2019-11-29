@@ -16,6 +16,7 @@ import { ARTooltipModule } from './tooltip/tooltip.module';
 import { ARAlertService } from './alert/alert.service';
 import { ARSnackBarService } from './snack-bar/snack-bar.service';
 import { ARNotationModule } from './notation/notation.module';
+import { ARButtonModule } from './button/button.module';
 
 @NgModule({
   imports: [
@@ -32,6 +33,7 @@ import { ARNotationModule } from './notation/notation.module';
     ARConfirmModalModule,
     ARAlertModule,
     ARSnackBarModule,
+    ARButtonModule,
   ],
   exports: [
     ARCardModule,
@@ -46,7 +48,8 @@ import { ARNotationModule } from './notation/notation.module';
     ARModalModule,
     ARConfirmModalModule,
     ARAlertModule,
-    ARSnackBarModule
+    ARSnackBarModule,
+    ARButtonModule
   ]
 })
 export class ArrakisLibModule {

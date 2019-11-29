@@ -19,6 +19,10 @@ export * from './lib/breadcrumb/breadcrumb.module';
 export * from './lib/breadcrumb/breadcrumb.component';
 export * from './lib/breadcrumb/breadcrumb.class';
 
+//    BUTTON
+export * from './lib/button/button.module';
+export * from './lib/button/button.component';
+
 //    CARD
 export * from './lib/card/card.module';
 export * from './lib/card/card.component';

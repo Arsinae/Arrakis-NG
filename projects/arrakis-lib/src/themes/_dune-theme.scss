@@ -272,3 +272,56 @@
 .ar-background-color-danger-hover:hover {
   background-color: var(--ar-danger);
 }
+
+  //    BORDER
+.ar-border-color-primary {
+  border-color: var(--ar-primary);
+}
+.ar-border-color-secondary {
+  border-color: var(--ar-secondary);
+}
+.ar-border-color-1 {
+  background-color: var(--ar-color1);
+}
+.ar-border-color-2 {
+  border-color: var(--ar-color2);
+}
+.ar-border-color-3 {
+  border-color: var(--ar-color3);
+}
+.ar-border-color-4 {
+  border-color: var(--ar-color4);
+}
+.ar-border-color-5 {
+  background-color: var(--ar-color5);
+}
+.ar-border-color-6 {
+  background-color: var(--ar-color6);
+}
+.ar-border-color-7 {
+  border-color: var(--ar-color7);
+}
+.ar-border-color-gradient1 {
+  border-image: var(--ar-gradient1) 10;
+}
+.ar-border-color-gradient2 {
+  border-image: var(--ar-gradient2) 10;
+}
+.ar-border-color-gradient3 {
+  border-image: var(--ar-gradient3) 10;
+}
+.ar-border-color-gradient4 {
+  border-image: var(--ar-gradient4) 10;
+}
+.ar-border-color-success {
+  border-color: var(--ar-success);
+}
+.ar-border-color-info {
+  border-color: var(--ar-info);
+}
+.ar-border-color-warning {
+  border-color: var(--ar-warning);
+}
+.ar-border-color-danger {
+  border-color: var(--ar-danger);
+}

@@ -1,0 +1,48 @@
+.ar-button {
+  box-shadow: var(--ar-shadow);
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+
+  &.ar-outline-button {
+    box-shadow: none;
+    border-width: 1px;
+    border-style: solid;
+
+    &:hover {
+      background-clip: unset;
+      -webkit-text-fill-color: white;
+      color: white;
+    }
+  }
+  
+  &:not(.ar-outline-button) {
+    color: white;
+  }
+
+  &.ar-button-rounded {
+    border-radius: 12px / 50%;
+  }
+
+  &.ar-button-size-small {
+    padding: calc(var(--ar-padding) / 2);
+  }
+
+  &.ar-button-size-medium {
+    padding: var(--ar-padding);
+  }
+
+  &.ar-button-size-big {
+    padding: calc(2 * var(--ar-padding));
+  }
+
+  &:hover {
+    box-shadow: var(--ar-big-shadow);
+  }
+
+  &:active {
+    transform: translateY(3px);
+  }
+}
