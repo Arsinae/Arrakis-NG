@@ -1,0 +1,36 @@
+.ar-input-container {
+
+  position: relative;
+  margin-top: 20px;
+  transition: all linear .3s;
+
+  .ar-input-placeholder {
+    position: absolute;
+    transition: all 0.2s ease-in;
+    z-index: 0;
+    color: var(--ar-text-color);
+
+    &.ar-input-focus {
+      font-size: 12px;
+      transform: translateY(-100%);
+      color: var(--ar-input-color);
+    }
+  }
+
+  .ar-input {
+    border: none;
+    border-bottom: 1px var(--ar-text-color) solid;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: transparent;
+    color: var(--ar-text-color);
+
+    &:focus {
+      border-bottom-width: 2px;
+      border-bottom-color: var(--ar-input-color);
+      box-shadow: none;
+      outline: none;
+    }
+  }
+}

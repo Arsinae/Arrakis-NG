@@ -39,6 +39,10 @@ export * from './lib/fixed-background/fixed-background.component';
 export * from './lib/flipping-card/flipping-card.module';
 export * from './lib/flipping-card/flipping-card.component';
 
+//    INPUT
+export * from './lib/input/input.module';
+export * from './lib/input/input.component';
+
 //    MODAL
 export * from './lib/modal/modal.module';
 export * from './lib/modal/modal.component';

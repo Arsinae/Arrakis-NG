@@ -26,6 +26,7 @@ import xml from 'highlight.js/lib/languages/xml';
 import scss from 'highlight.js/lib/languages/scss';
 import css from 'highlight.js/lib/languages/css';
 import typescript from 'highlight.js/lib/languages/typescript';
+import { InputComponent } from './input/input.component';
 
 
 export function hljsLanguages() {
@@ -54,7 +55,8 @@ export function hljsLanguages() {
     BreadcrumbComponent,
     NotationComponent,
     ButtonComponent,
-    FixedBackgroundComponent
+    FixedBackgroundComponent,
+    InputComponent
   ],
   imports: [
     CommonModule,

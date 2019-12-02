@@ -18,6 +18,7 @@ import { ARSnackBarService } from './snack-bar/snack-bar.service';
 import { ARNotationModule } from './notation/notation.module';
 import { ARButtonModule } from './button/button.module';
 import { ARFixedBackgroundModule } from './fixed-background/fixed-background.module';
+import { ARInputModule } from './input/input.module';
 
 @NgModule({
   imports: [
@@ -35,6 +36,7 @@ import { ARFixedBackgroundModule } from './fixed-background/fixed-background.mod
     ARConfirmModalModule,
     ARAlertModule,
     ARSnackBarModule,
+    ARInputModule,
     ARButtonModule,
   ],
   exports: [
@@ -52,7 +54,8 @@ import { ARFixedBackgroundModule } from './fixed-background/fixed-background.mod
     ARConfirmModalModule,
     ARAlertModule,
     ARSnackBarModule,
-    ARButtonModule
+    ARInputModule,
+    ARButtonModule,
   ],
 })
 export class ArrakisLibModule {

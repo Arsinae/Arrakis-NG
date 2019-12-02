@@ -1,0 +1,5 @@
+<div class="ar-input-container ar-input-color-{{color}}">
+  <span class="ar-input-placeholder" [class.ar-input-focus]="focus" (click)="changeFocus()">{{placeholder}}</span>
+  <input class="ar-input" [type]="type" #input [ngModel]="value" (ngModelChange)="changeValue($event)"
+    (keydown.enter)="pressEnter.emit($event)" (focus)="focusInput()" (focusout)="unfocusInput()" (blur)="unfocusInput()" [disabled]="disabled">
+</div>
