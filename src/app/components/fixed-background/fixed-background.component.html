@@ -1,0 +1,31 @@
+<div class="component-name">
+  Image de Fond Fixée
+</div>
+
+<div class="background-container">
+  <ar-fixed-background [image]="'assets/imgs/arrakis.jpg'"></ar-fixed-background>
+  <div class="background-text">Decouvrez ArrakisNG</div>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    API
+  </div>
+
+  <table class="explanation-title">
+    <tr *ngFor="let explanation of explanations">
+      <td>{{explanation.title}}</td>
+      <td>{{explanation.explanation}}</td>
+    </tr>
+  </table>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    Exemple
+  </div>
+  <div>
+    <pre><code [highlight]="htmlCode"></code></pre>
+    <pre><code [highlight]="cssCode"></code></pre>
+  </div>
+</div>

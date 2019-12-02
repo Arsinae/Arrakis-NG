@@ -6,12 +6,6 @@ import { ComponentsComponent } from './components.component';
 
 import { CardComponent} from './card/card.component';
 import { FlippingCardComponent } from './flipping-card/flipping-card.component';
-
-import { ArrakisLibModule } from 'projects/arrakis-lib/src/lib/arrakis-lib.module';
-import { HighlightModule } from 'ngx-highlightjs';
-import xml from 'highlight.js/lib/languages/xml';
-import scss from 'highlight.js/lib/languages/scss';
-import typescript from 'highlight.js/lib/languages/typescript';
 import { AlertComponent } from './alert/alert.component';
 import { SnackBarComponent } from './snack-bar/snack-bar.component';
 import { TableComponent } from './table/table.component';
@@ -24,11 +18,21 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { NotationComponent } from './notation/notation.component';
 import { ButtonComponent } from './button/button.component';
+import { FixedBackgroundComponent } from './fixed-background/fixed-background.component';
+
+import { ArrakisLibModule } from 'projects/arrakis-lib/src/lib/arrakis-lib.module';
+import { HighlightModule } from 'ngx-highlightjs';
+import xml from 'highlight.js/lib/languages/xml';
+import scss from 'highlight.js/lib/languages/scss';
+import css from 'highlight.js/lib/languages/css';
+import typescript from 'highlight.js/lib/languages/typescript';
+
 
 export function hljsLanguages() {
   return [
     {name: 'typescript', func: typescript},
     {name: 'scss', func: scss},
+    {name: 'css', func: css},
     {name: 'xml', func: xml}
   ];
 }
@@ -49,7 +53,8 @@ export function hljsLanguages() {
     ProgressBarComponent,
     BreadcrumbComponent,
     NotationComponent,
-    ButtonComponent
+    ButtonComponent,
+    FixedBackgroundComponent
   ],
   imports: [
     CommonModule,

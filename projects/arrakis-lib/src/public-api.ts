@@ -31,6 +31,10 @@ export * from './lib/card/card.component';
 export * from './lib/confirm-modal/confirm-modal.module';
 export * from './lib/confirm-modal/confirm-modal.component';
 
+//    FIXED BACKGROUND
+export * from './lib/fixed-background/fixed-background.module';
+export * from './lib/fixed-background/fixed-background.component';
+
 //    FLIPPING CARD
 export * from './lib/flipping-card/flipping-card.module';
 export * from './lib/flipping-card/flipping-card.component';
