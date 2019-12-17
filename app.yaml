@@ -1,0 +1,9 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+handlers:
+  - url: /
+    static_files: arrakis-ng/index.html
+    upload: arrakis-ng/index.html
+  - url: /
+    static_dir: arrakis-ng
