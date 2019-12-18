@@ -43,6 +43,10 @@ export * from './lib/flipping-card/flipping-card.component';
 export * from './lib/input/input.module';
 export * from './lib/input/input.component';
 
+//    INPUT NUMBER
+export * from './lib/input-number/input-number.module';
+export * from './lib/input-number/input-number.component';
+
 //    MODAL
 export * from './lib/modal/modal.module';
 export * from './lib/modal/modal.component';

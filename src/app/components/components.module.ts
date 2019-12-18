@@ -27,6 +27,7 @@ import scss from 'highlight.js/lib/languages/scss';
 import css from 'highlight.js/lib/languages/css';
 import typescript from 'highlight.js/lib/languages/typescript';
 import { InputComponent } from './input/input.component';
+import { InputNumberComponent } from './input-number/input-number.component';
 
 
 export function hljsLanguages() {
@@ -56,7 +57,8 @@ export function hljsLanguages() {
     NotationComponent,
     ButtonComponent,
     FixedBackgroundComponent,
-    InputComponent
+    InputComponent,
+    InputNumberComponent
   ],
   imports: [
     CommonModule,

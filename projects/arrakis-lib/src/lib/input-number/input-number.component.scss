@@ -1,0 +1,62 @@
+.ar-input-number-container {
+
+  .ar-input-number-label {
+    color: var(--ar-text-color);
+    font-size: 13px;
+    padding-left: var(--ar-padding);
+  }
+
+  &:hover .ar-input-number-label {
+    color: inherit;
+  }
+
+  .ar-input-number {
+    display: flex;
+
+    .ar-incrementor-both-side {
+      color: white;
+      padding: calc(var(--ar-padding) / 2) var(--ar-padding);
+      border-radius: 50% 0 0 50%;
+      cursor: pointer;
+
+      &:last-of-type {
+        border-radius: 0 50% 50% 0;
+      }
+    }
+
+    .ar-incrementor-single-side {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        cursor: pointer;
+        color: white;
+        padding: calc(var(--ar-padding) / 3) calc(var(--ar-padding) / 2);
+
+        &:last-of-type {
+          margin-top: 1px;
+        }
+      }
+    }
+
+    .ar-number-container {
+      padding: calc(var(--ar-padding) / 2) var(--ar-padding);
+      flex: 1;
+      border-width: 1px;
+      border-style: solid;
+      overflow: hidden;
+      position: relative;
+      color: var(--ar-text-color);
+
+      span {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    span.ar-disabled {
+      cursor: not-allowed;
+    }
+  }
+}

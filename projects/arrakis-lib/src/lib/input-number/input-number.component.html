@@ -1,0 +1,30 @@
+<div class="ar-input-number-container ar-color-{{color}}-hover">
+  <div class="ar-input-number-label" *ngIf="label">
+    {{label}}
+  </div>
+
+  <div class="ar-input-number">
+    <ng-container *ngIf="display === 'both'">
+      <span class="ar-incrementor-both-side ar-background-color-{{color}}" [class.ar-disabled]="disabled" (click)="incrementValue(-increment)">
+        <i class="fas fa-minus"></i>
+      </span>
+    </ng-container>
+    <div class="ar-number-container ar-border-color-{{color}}">
+      <span>{{value}}</span>
+    </div>
+    <ng-container *ngIf="display === 'both'">
+      <span class="ar-incrementor-both-side ar-background-color-{{color}}" [class.ar-disabled]="disabled" (click)="incrementValue(increment)">
+        <i class="fas fa-plus"></i>
+      </span>
+    </ng-container>
+    <div *ngIf="display === 'single'" class="ar-incrementor-single-side">
+      <span class="ar-background-color-{{color}}" (click)="incrementValue(-increment)" [class.ar-disabled]="disabled">
+        <i class="fas fa-minus"></i>
+      </span>
+      <span class="ar-background-color-{{color}}" (click)="incrementValue(increment)" [class.ar-disabled]="disabled">
+        <i class="fas fa-plus"></i>
+      </span>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,30 @@
+<div class="component-name">
+  Input Number
+</div>
+
+<div class="input-container">
+  <ar-input-number label="Test de label" color="6"></ar-input-number>
+  <ar-input-number display="single" color="danger" [increment]="2" [min]="-10" [max]="10"></ar-input-number>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    API
+  </div>
+
+  <table class="explanation-title">
+    <tr *ngFor="let explanation of explanations">
+      <td>{{explanation.title}}</td>
+      <td>{{explanation.explanation}}</td>
+    </tr>
+  </table>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    Exemple
+  </div>
+  <div>
+    <pre><code [highlight]="htmlCode"></code></pre>
+  </div>
+</div>
