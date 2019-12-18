@@ -20,6 +20,7 @@ import { ARButtonModule } from './button/button.module';
 import { ARFixedBackgroundModule } from './fixed-background/fixed-background.module';
 import { ARInputModule } from './input/input.module';
 import { ARInputNumberModule } from './input-number/input-number.module';
+import { ARInputFileModule } from './input-file/input-file.module';
 
 @NgModule({
   imports: [
@@ -39,6 +40,7 @@ import { ARInputNumberModule } from './input-number/input-number.module';
     ARSnackBarModule,
     ARInputModule,
     ARInputNumberModule,
+    ARInputFileModule,
     ARButtonModule,
   ],
   exports: [
@@ -58,6 +60,7 @@ import { ARInputNumberModule } from './input-number/input-number.module';
     ARSnackBarModule,
     ARInputModule,
     ARInputNumberModule,
+    ARInputFileModule,
     ARButtonModule,
   ],
 })

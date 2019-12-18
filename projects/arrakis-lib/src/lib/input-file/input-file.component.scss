@@ -1,0 +1,19 @@
+.ar-input-file-container {
+
+  .ar-input-file-label {
+    cursor: pointer;
+
+    span {
+      padding: calc(var(--ar-padding) / 2);
+    }
+
+    .ar-input-file {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+}
