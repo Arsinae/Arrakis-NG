@@ -1,0 +1,3 @@
+<div [ngClass]="SwitchContainerClass" (click)="checked = !checked; checkedChange.emit(checked)">
+  <div class="ar-switch-button ar-background-color-{{color}} ar-border-color-{{color}}" [class.checked]="checked"></div>
+</div>

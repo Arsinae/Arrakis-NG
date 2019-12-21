@@ -69,6 +69,10 @@ export * from './lib/snack-bar/snack-bar.component';
 export * from './lib/snack-bar/snack-bar.service';
 export * from './lib/snack-bar/snack-bar.class';
 
+//    SWITCH
+export * from './lib/switch/switch.module';
+export * from './lib/switch/switch.component';
+
 //    TABLE
 export * from './lib/table/table.module';
 export * from './lib/table/table.component';

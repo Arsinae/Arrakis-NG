@@ -1,0 +1,25 @@
+.ar-switch-container {
+  position: relative;
+  width: 70px; height: 30px;
+  border-radius: 17px / 50%;
+  padding: 2.5px;
+  transition: all linear .3s;
+
+  &:not(.checked) {
+    background-color: var(--ar-background-color);
+  }
+
+  .ar-switch-button {
+    position: absolute;
+    top: 2.5px; left: 2.5px;
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    transition: all linear .2s;
+    cursor: pointer;
+
+    &.checked {
+      left: 42.5px;
+      background-color: var(--ar-background-color);
+    }
+  }
+}

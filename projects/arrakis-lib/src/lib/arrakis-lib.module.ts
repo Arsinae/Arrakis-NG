@@ -12,15 +12,16 @@ import { ARSnackBarModule } from './snack-bar/snack-bar.module';
 import { ARTableModule } from './table/table.module';
 import { ARTestimonialCardModule } from './testimonial-card/testimonial-card.module';
 import { ARTooltipModule } from './tooltip/tooltip.module';
-
-import { ARAlertService } from './alert/alert.service';
-import { ARSnackBarService } from './snack-bar/snack-bar.service';
 import { ARNotationModule } from './notation/notation.module';
 import { ARButtonModule } from './button/button.module';
 import { ARFixedBackgroundModule } from './fixed-background/fixed-background.module';
 import { ARInputModule } from './input/input.module';
 import { ARInputNumberModule } from './input-number/input-number.module';
 import { ARInputFileModule } from './input-file/input-file.module';
+import { ARSwitchModule } from './switch/switch.module';
+
+import { ARAlertService } from './alert/alert.service';
+import { ARSnackBarService } from './snack-bar/snack-bar.service';
 
 @NgModule({
   imports: [
@@ -42,6 +43,7 @@ import { ARInputFileModule } from './input-file/input-file.module';
     ARInputNumberModule,
     ARInputFileModule,
     ARButtonModule,
+    ARSwitchModule
   ],
   exports: [
     ARCardModule,
@@ -62,6 +64,7 @@ import { ARInputFileModule } from './input-file/input-file.module';
     ARInputNumberModule,
     ARInputFileModule,
     ARButtonModule,
+    ARSwitchModule,
   ],
 })
 export class ArrakisLibModule {
