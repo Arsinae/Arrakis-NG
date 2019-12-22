@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { trigger, transition, query, animate, keyframes, style } from '@angular/animations';
 import { ARTableHeader, ARTableRow } from './table.class';
+import { element } from 'protractor';
 
 @Component({
   selector: 'ar-table',
@@ -41,6 +42,7 @@ export class ARTableComponent implements OnInit {
   @Input() color: string = null;
   @Input() search: boolean = false;
   @Input() searchPlaceholder: string = 'Recherche';
+  @Input() sort: {element: string, type: string} = {element: '', type: 'asc'};
 
   @Output() selectRow: EventEmitter<ARTableRow> = new EventEmitter<ARTableRow>();
 
@@ -64,14 +66,43 @@ export class ARTableComponent implements OnInit {
     return (value.length !== 0 ? value[0].value : '');
   }
 
+  changeSort(sort) {
+    if (this.sort.element === sort) {
+      this.sort.type = (this.sort.type === 'asc') ? 'desc' : 'asc';
+    } else {
+      this.sort.element = sort;
+    }
+  }
+
   get MatchingRow() {
-    return this.rows.filter(row => {
+    const rows = this.rows.filter(row => {
       let match: boolean = false;
       row.row.forEach(value => {
         match = match || value.value.toString().toLowerCase().match(this.searchText.toLowerCase());
       });
       return match;
-    });
+    })
+    if (this.sort.element !== '') {
+      return rows.sort((a, b) => {
+        const first = a.row.filter(row => { return row.id === this.sort.element})[0],
+        second = b.row.filter(row => { return row.id === this.sort.element})[0];
+        if (this.sort.type === 'asc') {
+          if (typeof first.value === 'string') {
+            return (first.value < second.value) ? 1 : -1;
+          } else {
+            return first.value - second.value;
+          }
+        } else {
+          if (typeof first.value === 'string') {
+            return (first.value < second.value) ? -1 : 1;
+          } else {
+            return first.value - second.value;
+          }
+        }
+      });
+    } else {
+      return rows;
+    }
   }
 
 }

@@ -3,7 +3,12 @@
     <input [(ngModel)]="searchText" [placeholder]="searchPlaceholder">
   </div>
   <div class="ar-table-header">
-    <div *ngFor="let headerPart of header">{{headerPart.display}}</div>
+    <div *ngFor="let headerPart of header" (click)="changeSort(headerPart.name)">
+      {{headerPart.display}}
+      <div class="sort-arrow" [class.asc]="sort.type === 'asc'" *ngIf="sort.element === headerPart.name" >
+        <i class="fas fa-arrow-down"></i>
+      </div>
+    </div>
   </div>
 
   <div *ngIf="tableAnimation === 'vertical'" [@verticalAnimation]="MatchingRow.length">

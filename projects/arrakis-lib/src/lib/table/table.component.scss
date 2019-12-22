@@ -21,6 +21,17 @@
       flex: 1;
       padding: 6px;
       background-color: var(--ar-background-color);
+      cursor: pointer;
+
+      .sort-arrow {
+        display: inline-table;
+        margin: 0 calc(var(--ar-padding) / 2) 0 0;
+        transition: all linear .2s;
+
+        &.asc {
+          transform: rotate(180deg);
+        }
+      }
     }
   }
 
