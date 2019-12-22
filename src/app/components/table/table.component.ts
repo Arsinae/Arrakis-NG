@@ -36,6 +36,8 @@ export class TableComponent implements OnInit {
       {title: '@Input() rows', explanation: 'Liste des lignes du tableau; Array<ARTableRow>: [](défaut)'},
       {title: '@Input() tableAnimation', explanation: 'Animation d\'entrée et de sortie des lignes; String: \'vertical\'(défaut), \'horizontal\''},
       {title: '@Input() color', explanation: 'Couleur par défaut des lignes; String: null(défaut), primary, secondary, 1-7'},
+      {title: '@Input() search', explanation: 'Ajoute le champs de recherche sur le tableau; Boolean: false(défaut)'},
+      {title: '@Input() searchPlaceholder', explanation: 'Placeholder du champs de recherche; String: Recherche(défaut)'},
       {title: '@Output() selectRow', explanation: 'Emission d\'évènement lors du clic sur une ligne'},
       {title: 'Classe ARTableHeader', explanation: '{name, display}'},
       {title: 'Classe ARTableRow', explanation: '{row: Array<{id, value}>, color}'},

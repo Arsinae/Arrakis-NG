@@ -39,8 +39,12 @@ export class ARTableComponent implements OnInit {
   @Input() rows: Array<ARTableRow> = [];
   @Input() tableAnimation: string = 'horizontal';
   @Input() color: string = null;
+  @Input() search: boolean = false;
+  @Input() searchPlaceholder: string = 'Recherche';
 
   @Output() selectRow: EventEmitter<ARTableRow> = new EventEmitter<ARTableRow>();
+
+  public searchText: string = '';
 
   constructor() { }
 
@@ -58,6 +62,16 @@ export class ARTableComponent implements OnInit {
   getRowValue(id: string, row: Array<{id: string, value: any}>): any {
     const value = row.filter(value => { return value.id === id; });
     return (value.length !== 0 ? value[0].value : '');
+  }
+
+  get MatchingRow() {
+    return this.rows.filter(row => {
+      let match: boolean = false;
+      row.row.forEach(value => {
+        match = match || value.value.toString().toLowerCase().match(this.searchText.toLowerCase());
+      });
+      return match;
+    });
   }
 
 }

@@ -1,4 +1,14 @@
 .ar-table-container {
+  .ar-table-search {
+    width: 100%;
+    color: var(--ar-text-color);
+    text-align: end;
+
+    &>input {
+      border: none;
+    }
+  }
+
   .ar-table-header {
     display: flex;
     flex-direction: row;
