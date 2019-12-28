@@ -116,10 +116,10 @@ export class ARTabsComponent implements OnChanges, AfterContentChecked {
     this.tabs.forEach((tab, index) => {
       if (index === this.displayedIndex && tab.display === false) {
         Promise.resolve(null).then(() => tab.display = true);
-        tab.changeDisplay.emit({index: index, state: true});
+        tab.displayChange.emit({index: index, state: true});
       } else if (index !== this.displayedIndex && tab.display === true) {
         Promise.resolve(null).then(() => tab.display = false);
-        tab.changeDisplay.emit({index: index, state: false});
+        tab.displayChange.emit({index: index, state: false});
       }
     });
   }

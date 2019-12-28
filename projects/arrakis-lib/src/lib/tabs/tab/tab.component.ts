@@ -9,7 +9,7 @@ export class ARTabComponent implements OnInit {
 
   @Input() title = '';
 
-  @Output() changeDisplay: EventEmitter<any> = new EventEmitter();
+  @Output() displayChange: EventEmitter<any> = new EventEmitter();
 
   public display = false;
 

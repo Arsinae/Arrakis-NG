@@ -23,6 +23,7 @@ import { ARSwitchModule } from './switch/switch.module';
 import { ARAlertService } from './alert/alert.service';
 import { ARSnackBarService } from './snack-bar/snack-bar.service';
 import { ARTabsModule } from './tabs/tabs.module';
+import { ARCarouselModule } from './carousel/carousel.module';
 
 @NgModule({
   imports: [
@@ -39,6 +40,7 @@ import { ARTabsModule } from './tabs/tabs.module';
     ARModalModule,
     ARConfirmModalModule,
     ARTabsModule,
+    ARCarouselModule,
     ARAlertModule,
     ARSnackBarModule,
     ARInputModule,
@@ -61,6 +63,7 @@ import { ARTabsModule } from './tabs/tabs.module';
     ARModalModule,
     ARConfirmModalModule,
     ARTabsModule,
+    ARCarouselModule,
     ARAlertModule,
     ARSnackBarModule,
     ARInputModule,

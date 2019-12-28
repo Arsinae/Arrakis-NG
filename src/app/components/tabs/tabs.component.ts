@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabsComponent implements OnInit {
 
-  public htmlCode = '<ar-tabs>\n  <ar-tab *ngFor="let tab of tabs" [title]="tab.title">\n    <div>{{ tab.text }}</div>\n  <ar-tab>\n</ar-tabs>\n';
+  public htmlCode = '<ar-tabs>\n  <ar-tab *ngFor="let tab of tabs" [title]="tab.title">\n    <div>{{ tab.text }}</div>\n  </ar-tab>\n</ar-tabs>\n';
   public tsCode = 'public tabs: Array<{title: string, text: string}> = [\n  {title: \'House Atréides\', text: \'...\'},\n  ...\n]\n';
   public explanations: Array<{title: string, explanation: string}> = [];
 
@@ -24,7 +24,7 @@ export class TabsComponent implements OnInit {
       {title: '', explanation: ''},
       {title: 'Balise HTML', explanation: 'ar-tab'},
       {title: '@Input() title', explanation: 'Titre de l\'entête; String: \'\'(défaut)'},
-      {title: '@Output() changeDisplay', explanation: 'Emission d\'évènement lors du changement d\'état de la tab; {index: Number, state: Boolean}'},
+      {title: '@Output() displayChange', explanation: 'Emission d\'évènement lors du changement d\'état de la tab; {index: Number, state: Boolean}'},
     ];
   }
 

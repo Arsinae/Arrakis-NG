@@ -1,0 +1,20 @@
+<div class="ar-carousel-wrapper">
+  <div class="ar-data-container" [@carouselAnimation]="change" [style.height.px]="height"
+  (swipeLeft)="changeDisplay(1, 'next')" (swipeRight)="changeDisplay(-1, 'prev')">
+    <ng-content></ng-content>
+  </div>
+
+  <div class="ar-carousel-arrow ar-carousel-left-arrow ar-color-{{color}}-hover" (click)="changeDisplayByClick($event, -1, 'prev')">
+    <span><i class="fas fa-chevron-left fa-2x"></i></span>
+  </div>
+
+  <div class="ar-carousel-arrow ar-carousel-right-arrow  ar-color-{{color}}-hover" (click)="changeDisplayByClick($event, 1, 'next')">
+    <span><i class="fas fa-chevron-right fa-2x"></i></span>
+  </div>
+
+  <div class="ar-carousel-stepper" *ngIf="stepper">
+    <div class="ar-carousel-step" *ngFor="let i of carouselLength" [class.ar-active]="i === displayedIndex"
+    (click)="changeStep($event, i)">
+    </div>
+  </div>
+</div>

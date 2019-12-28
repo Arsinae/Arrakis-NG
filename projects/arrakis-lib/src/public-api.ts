@@ -27,6 +27,11 @@ export * from './lib/button/button.component';
 export * from './lib/card/card.module';
 export * from './lib/card/card.component';
 
+//    CAROUSEL
+export * from './lib/carousel/carousel.module';
+export * from './lib/carousel/carousel.component';
+export * from './lib/carousel/carousel-box/carousel-box.component';
+
 //    CONFIRM MODAL
 export * from './lib/confirm-modal/confirm-modal.module';
 export * from './lib/confirm-modal/confirm-modal.component';
