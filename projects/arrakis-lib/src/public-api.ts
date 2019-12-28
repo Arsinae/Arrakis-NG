@@ -78,6 +78,11 @@ export * from './lib/table/table.module';
 export * from './lib/table/table.component';
 export * from './lib/table/table.class';
 
+//    TABS
+export * from './lib/tabs/tabs.module';
+export * from './lib/tabs/tabs.component';
+export * from './lib/tabs/tab/tab.component';
+
 //    TESTIMONIAL CARD
 export * from './lib/testimonial-card/testimonial-card.module';
 export * from './lib/testimonial-card/testimonial-card.component';

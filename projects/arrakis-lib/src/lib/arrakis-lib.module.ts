@@ -22,6 +22,7 @@ import { ARSwitchModule } from './switch/switch.module';
 
 import { ARAlertService } from './alert/alert.service';
 import { ARSnackBarService } from './snack-bar/snack-bar.service';
+import { ARTabsModule } from './tabs/tabs.module';
 
 @NgModule({
   imports: [
@@ -37,13 +38,14 @@ import { ARSnackBarService } from './snack-bar/snack-bar.service';
     ARFixedBackgroundModule,
     ARModalModule,
     ARConfirmModalModule,
+    ARTabsModule,
     ARAlertModule,
     ARSnackBarModule,
     ARInputModule,
     ARInputNumberModule,
     ARInputFileModule,
     ARButtonModule,
-    ARSwitchModule
+    ARSwitchModule,
   ],
   exports: [
     ARCardModule,
@@ -58,6 +60,7 @@ import { ARSnackBarService } from './snack-bar/snack-bar.service';
     ARFixedBackgroundModule,
     ARModalModule,
     ARConfirmModalModule,
+    ARTabsModule,
     ARAlertModule,
     ARSnackBarModule,
     ARInputModule,
@@ -66,6 +69,7 @@ import { ARSnackBarService } from './snack-bar/snack-bar.service';
     ARButtonModule,
     ARSwitchModule,
   ],
+  declarations: [],
 })
 export class ArrakisLibModule {
   static forRoot(): ModuleWithProviders {

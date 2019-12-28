@@ -30,6 +30,7 @@ import { InputComponent } from './input/input.component';
 import { InputNumberComponent } from './input-number/input-number.component';
 import { InputFileComponent } from './input-file/input-file.component';
 import { SwitchComponent } from './switch/switch.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 
 export function hljsLanguages() {
@@ -62,7 +63,8 @@ export function hljsLanguages() {
     InputComponent,
     InputNumberComponent,
     InputFileComponent,
-    SwitchComponent
+    SwitchComponent,
+    TabsComponent
   ],
   imports: [
     CommonModule,

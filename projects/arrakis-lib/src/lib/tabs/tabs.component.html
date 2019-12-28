@@ -1,0 +1,20 @@
+<div class="ar-tabs-container">
+  <div class="ar-tabs-header">
+    <div class="ar-tab-arrow" *ngIf="tabs.length > displayedTitleNumber" (click)="changeTitlesIndex(titleIndex - displayedTitleNumber)">
+      <span><i class="fas fa-angle-left fa-lg"></i></span>
+    </div>
+    <div class="ar-tabs-title-bar" [@fadeAnimation]="titleIndex">
+      <div *ngFor="let title of titleList; let i = index" [ngClass]="getTabHeaderClass(i)" [style.minWidth.%]="100 / displayedTitleNumber"
+      [class.ar-tab-active]="displayedIndex === i + titleIndex" (click)="changeDisplayedIndex(i + titleIndex)">
+        {{title}}
+      </div>
+    </div>
+    <div class="ar-tab-arrow" *ngIf="tabs.length > displayedTitleNumber" (click)="changeTitlesIndex(titleIndex + displayedTitleNumber)">
+      <span><i class="fas fa-angle-right fa-lg"></i></span>
+    </div>
+  </div>
+
+  <div class="ar-tab-content" [@contentAnimation]="displayedIndex">
+    <ng-content></ng-content>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+.ar-tabs-container {
+  width: 100%;
+  transition: all .2s linear;
+
+  .ar-tabs-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .ar-tabs-title-bar {
+      flex: 1;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: hidden;
+
+      .ar-tab-title {
+        flex: 1;
+        box-sizing: border-box;
+        padding: var(--ar-padding);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+        cursor: pointer;
+        border-bottom: 1px solid lightgray;
+        transition: border .3s ease-in-out;
+
+        &.ar-tab-active {
+          border-bottom-width: 2px;
+          border-bottom-color: var(--text-color);
+        }
+
+        &:hover {
+          background-color: var(--ar-background-color);
+        }
+      }
+    }
+
+    .ar-tab-arrow {
+      padding: var(--ar-padding);
+      box-sizing: border-box;
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--ar-background-color);
+      }
+    }
+  }
+}
