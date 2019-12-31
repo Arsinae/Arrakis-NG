@@ -1,0 +1,9 @@
+<div class="ar-select-container {{color}}Select" [class.ar-select-open]="open">
+  <div class="ar-select-value ar-border-color-{{color}}" (click)="open = !open">
+    <div class="ar-select-placeholder ar-color-{{color}}" [class.ar-select-focus]="open || text !== ''">{{placeholder}}</div>
+    <div class="ar-select-input">{{text}}</div>
+  </div>
+  <div class="ar-select-menu" (click)="open = false">
+    <ng-content></ng-content>
+  </div>
+</div>

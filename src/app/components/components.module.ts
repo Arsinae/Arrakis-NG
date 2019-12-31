@@ -33,6 +33,7 @@ import { SwitchComponent } from './switch/switch.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { TextEditorComponent } from './text-editor/text-editor.component';
+import { SelectComponent } from './select/select.component';
 
 
 export function hljsLanguages() {
@@ -69,6 +70,7 @@ export function hljsLanguages() {
     TabsComponent,
     CarouselComponent,
     TextEditorComponent,
+    SelectComponent
   ],
   imports: [
     CommonModule,

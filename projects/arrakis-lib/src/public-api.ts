@@ -68,6 +68,11 @@ export * from './lib/notation/notation.component';
 export * from './lib/progress-bar/progress-bar.module';
 export * from './lib/progress-bar/progress-bar.component';
 
+//    SELECT
+export * from './lib/select/select.module';
+export * from './lib/select/select.component';
+export * from './lib/select/select-option/select-option.component';
+
 //    SNACKBAR
 export * from './lib/snack-bar/snack-bar.module';
 export * from './lib/snack-bar/snack-bar.component';

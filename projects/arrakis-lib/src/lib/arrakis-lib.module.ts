@@ -25,6 +25,7 @@ import { ARTextEditorModule } from './text-editor/text-editor.module';
 
 import { ARAlertService } from './alert/alert.service';
 import { ARSnackBarService } from './snack-bar/snack-bar.service';
+import { ARSelectModule } from './select/select.module';
 
 @NgModule({
   imports: [
@@ -47,6 +48,7 @@ import { ARSnackBarService } from './snack-bar/snack-bar.service';
     ARInputModule,
     ARInputNumberModule,
     ARInputFileModule,
+    ARSelectModule,
     ARTextEditorModule,
     ARButtonModule,
     ARSwitchModule,
@@ -71,6 +73,7 @@ import { ARSnackBarService } from './snack-bar/snack-bar.service';
     ARInputModule,
     ARInputNumberModule,
     ARInputFileModule,
+    ARSelectModule,
     ARTextEditorModule,
     ARButtonModule,
     ARSwitchModule,

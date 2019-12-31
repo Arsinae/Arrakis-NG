@@ -1,0 +1,52 @@
+.ar-select-container {
+
+  width: 100%;
+  position: relative;
+
+  .ar-select-value {
+    position: relative;
+    margin-top: 20px;
+    padding-bottom: 1px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    font-size: 16px;
+    height: 20px;
+    color: var(--ar-text-color);
+
+    .ar-select-placeholder {
+      position: absolute;
+      transition: all 0.2s ease-in;
+      z-index: 0;
+
+      &.ar-select-focus {
+        font-size: 12px;
+        transform: translateY(-100%);
+      }
+
+      &:not(.ar-select-focus) {
+        color: var(--ar-text-color);
+      }
+    }
+
+    .ar-select-input {
+      z-index: 1;
+      height: 100%;
+    }
+  }
+
+  .ar-select-menu {
+    position: absolute;
+    top: auto;
+    left: auto;
+    min-width: inherit; width: 100%;
+    background-color: var(--ar-background-color);
+    color: var(--ar-text-color);
+    box-shadow: var(--ar-shadow);
+    padding: var(--ar-padding);
+    z-index: 1;
+  }
+
+  &:not(.ar-select-open)>.ar-select-menu {
+    display: none;
+  }
+}

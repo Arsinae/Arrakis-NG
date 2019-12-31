@@ -1,0 +1,34 @@
+<div class="component-name">
+  Input de Sélection
+</div>
+
+<div class="input-container">
+  <ar-select color="2" placeholder="Quelle planète choisir?" [(value)]="value">
+    <ar-select-option text="Arrakis" value="arrakis"></ar-select-option>
+    <ar-select-option text="Caladan" value="caladan"></ar-select-option>
+    <ar-select-option text="Giedi Prime" value="giedi-prime"></ar-select-option>
+  </ar-select>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    API
+  </div>
+
+  <table class="explanation-title">
+    <tr *ngFor="let explanation of explanations">
+      <td>{{explanation.title}}</td>
+      <td>{{explanation.explanation}}</td>
+    </tr>
+  </table>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    Exemple
+  </div>
+  <div>
+    <pre><code [highlight]="htmlCode"></code></pre>
+    <pre><code [highlight]="tsCode"></code></pre>
+  </div>
+</div>
