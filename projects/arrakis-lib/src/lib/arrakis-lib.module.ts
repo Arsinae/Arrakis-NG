@@ -19,11 +19,12 @@ import { ARInputModule } from './input/input.module';
 import { ARInputNumberModule } from './input-number/input-number.module';
 import { ARInputFileModule } from './input-file/input-file.module';
 import { ARSwitchModule } from './switch/switch.module';
+import { ARTabsModule } from './tabs/tabs.module';
+import { ARCarouselModule } from './carousel/carousel.module';
+import { ARTextEditorModule } from './text-editor/text-editor.module';
 
 import { ARAlertService } from './alert/alert.service';
 import { ARSnackBarService } from './snack-bar/snack-bar.service';
-import { ARTabsModule } from './tabs/tabs.module';
-import { ARCarouselModule } from './carousel/carousel.module';
 
 @NgModule({
   imports: [
@@ -46,6 +47,7 @@ import { ARCarouselModule } from './carousel/carousel.module';
     ARInputModule,
     ARInputNumberModule,
     ARInputFileModule,
+    ARTextEditorModule,
     ARButtonModule,
     ARSwitchModule,
   ],
@@ -69,6 +71,7 @@ import { ARCarouselModule } from './carousel/carousel.module';
     ARInputModule,
     ARInputNumberModule,
     ARInputFileModule,
+    ARTextEditorModule,
     ARButtonModule,
     ARSwitchModule,
   ],

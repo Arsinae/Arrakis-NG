@@ -92,6 +92,10 @@ export * from './lib/tabs/tab/tab.component';
 export * from './lib/testimonial-card/testimonial-card.module';
 export * from './lib/testimonial-card/testimonial-card.component';
 
+//    TEXT EDITOR
+export * from './lib/text-editor/text-editor.module';
+export * from './lib/text-editor/text-editor.component';
+
 //    TOOLTIP
 export * from './lib/tooltip/tooltip.module'
 export * from './lib/tooltip/tooltip.component'

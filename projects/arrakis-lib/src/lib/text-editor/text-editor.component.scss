@@ -1,0 +1,50 @@
+.ar-text-editor {
+  width: 100%;
+  max-width: 100%;
+
+  .ar-text-editor-edit-menu {
+    background-color: var(--ar-background-color);
+    border: lightgray 1px solid;
+  }
+
+  .ar-text-editor-button-group {
+    display: inline-block;
+    margin: 5px;
+    font-size: 12px;
+
+    &>* {
+      color: inherit;
+      padding: 6px 8px;
+      border-left: none;
+      border-bottom: lightgray 1px solid;
+      border-top: lightgray 1px solid;
+      border-right: lightgray 1px solid;
+      cursor: pointer;
+
+      &:first-child {
+        border-left: lightgray 1px solid;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+      }
+
+      &:last-child {
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+      }
+    }
+  }
+
+  .ar-text-editor-content {
+    size: 13px;
+    box-sizing: border-box;
+    padding: var(--ar-padding);
+    word-break: normal;
+    width: 100%;
+    max-width: 100%;
+    border: lightgray 1px solid;
+    height: 200px;
+    overflow-y: auto;
+    display: inline-block;
+    color: var(--ar-text-color) !important;
+  }
+}
