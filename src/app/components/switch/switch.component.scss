@@ -1,3 +1,9 @@
 .switch-container {
   padding: 6px 6px;
+  display: flex;
+  align-items: center;
+  
+  &>* {
+    margin: 0 6px;
+  }
 }

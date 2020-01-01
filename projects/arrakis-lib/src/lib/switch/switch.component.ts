@@ -9,6 +9,7 @@ export class ARSwitchComponent implements OnInit {
 
   @Input() color:string = 'primary';
   @Input() checked: boolean = false;
+  @Input() size: string = 'medium';
 
   @Output() checkedChange: EventEmitter<boolean> = new EventEmitter();
 
@@ -19,9 +20,9 @@ export class ARSwitchComponent implements OnInit {
 
   get SwitchContainerClass() {
     if (this.checked) {
-      return `ar-switch-container checked ar-background-color-${this.color}`;   
+      return `ar-switch-container checked ar-background-color-${this.color} ar-switch-${this.size}`;   
     }
-    return 'ar-switch-container'
+    return `ar-switch-container ar-switch-${this.size}`;
   }
 
 }

@@ -1,3 +1,8 @@
 .ar-select-option-value {
   cursor: pointer;
+  color: inherit;
+
+  &:not(:hover) {
+    color: var(--ar-text-color);
+  }
 }

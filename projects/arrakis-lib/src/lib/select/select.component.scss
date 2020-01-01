@@ -6,7 +6,7 @@
   .ar-select-value {
     position: relative;
     margin-top: 20px;
-    padding-bottom: 1px;
+    padding-bottom: 3px;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     font-size: 16px;
@@ -40,7 +40,6 @@
     left: auto;
     min-width: inherit; width: 100%;
     background-color: var(--ar-background-color);
-    color: var(--ar-text-color);
     box-shadow: var(--ar-shadow);
     padding: var(--ar-padding);
     z-index: 1;

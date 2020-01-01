@@ -34,6 +34,7 @@ import { TabsComponent } from './tabs/tabs.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { TextEditorComponent } from './text-editor/text-editor.component';
 import { SelectComponent } from './select/select.component';
+import { InputAutocompleteComponent } from './input-autocomplete/input-autocomplete.component';
 
 
 export function hljsLanguages() {
@@ -70,7 +71,8 @@ export function hljsLanguages() {
     TabsComponent,
     CarouselComponent,
     TextEditorComponent,
-    SelectComponent
+    SelectComponent,
+    InputAutocompleteComponent
   ],
   imports: [
     CommonModule,

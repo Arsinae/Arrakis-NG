@@ -1,10 +1,9 @@
 <div class="component-name">
-  Switch
+  Input d'Autocomplétion
 </div>
 
-<div class="switch-container">
-  <ar-switch (checkedChange)="change($event)" color="3" size="large"></ar-switch>
-  <ar-switch (checkedChange)="change($event)" color="danger"></ar-switch>
+<div class="input-container">
+  <ar-input-autocomplete color="3" placeholder="Premier Input" [(value)]="value" [completeValues]="values"></ar-input-autocomplete>
 </div>
 
 <div class="explanation">
@@ -26,5 +25,6 @@
   </div>
   <div>
     <pre><code [highlight]="htmlCode"></code></pre>
+    <pre><code [highlight]="tsCode"></code></pre>
   </div>
 </div>

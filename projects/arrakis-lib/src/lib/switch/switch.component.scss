@@ -1,7 +1,10 @@
 .ar-switch-container {
+  --ar-switch-size: 40px;
+  --ar-switch-left: 23.5px;
+
   position: relative;
-  width: 70px; height: 30px;
-  border-radius: 17px / 50%;
+  width: var(--ar-switch-size); height: calc(var(--ar-switch-size) / 2.3);
+  border-radius: calc(var(--ar-switch-size) / 4 + 2px) / 50%;
   padding: 2.5px;
   transition: all linear .3s;
 
@@ -12,14 +15,19 @@
   .ar-switch-button {
     position: absolute;
     top: 2.5px; left: 2.5px;
-    width: 30px; height: 30px;
+    width: calc(var(--ar-switch-size) / 2.3); height: calc(var(--ar-switch-size) / 2.3);
     border-radius: 50%;
     transition: all linear .2s;
     cursor: pointer;
 
     &.checked {
-      left: 42.5px;
+      left: var(--ar-switch-left);
       background-color: var(--ar-background-color);
     }
+  }
+
+  &.ar-switch-large {
+    --ar-switch-size: 70px;
+    --ar-switch-left: 40.5px;
   }
 }

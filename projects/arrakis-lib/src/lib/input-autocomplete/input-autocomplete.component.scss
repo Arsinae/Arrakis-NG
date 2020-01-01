@@ -1,0 +1,71 @@
+.ar-input-autocomplete-container {
+  position: relative;
+  margin-top: 20px;
+  transition: all linear .2s;
+
+  .ar-input-autocomplete-placeholder {
+    position: absolute;
+    transition: all 0.2s ease-in;
+    z-index: 0;
+
+    &.ar-input-focus {
+      font-size: 12px;
+      transform: translateY(-100%);
+    }
+
+    &:not(.ar-input-focus) {
+      color: var(--ar-text-color);
+    }
+  }
+
+  .ar-input-autocomplete {
+    border: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: transparent;
+    color: var(--ar-text-color);
+    transition: all linear .2s;
+
+    &:focus {
+      border-bottom-width: 2px;
+      box-shadow: none;
+    }
+
+    &:not(:focus) {
+      border-bottom-color: var(--ar-text-color);
+    }
+  }
+
+  .ar-input-autocomplete-menu {
+    position: absolute;
+    top: auto;
+    left: auto;
+    min-width: inherit; width: 100%;
+    background-color: var(--ar-background-color);
+    box-shadow: var(--ar-shadow);
+    padding: var(--ar-padding);
+    z-index: 1;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    .ar-input-autocomplete-matching {
+      padding: var(--ar-padding) calc(var(--ar-padding) / 2);
+
+      &:not(:hover) {
+        color: var(--ar-text-color);
+      }
+    }
+
+    .ar-input-autocomplete-separator {
+      width: 100%;
+      height: 1px;
+    }
+  }
+
+  &:not(.ar-input-open)>.ar-input-autocomplete-menu {
+    display: none;
+  } 
+}

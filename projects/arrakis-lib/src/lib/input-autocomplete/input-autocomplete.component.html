@@ -1,0 +1,15 @@
+  
+<div class="ar-input-autocomplete-container" [class.ar-input-open]="focus">
+  <span class="ar-input-autocomplete-placeholder ar-color-{{color}}" [class.ar-input-focus]="focus || value !== ''" (click)="changeFocus()">{{placeholder}}</span>
+  <input class="ar-input-autocomplete ar-border-color-{{color}}" type="text" #input [ngModel]="value" (ngModelChange)="changeValue($event)"
+    (keydown)="pressKey($event)" (focus)="focusInput()" (focusout)="unfocusInput()" [disabled]="disabled">
+  <div class="ar-input-autocomplete-menu">
+    <ng-container *ngFor="let completeValue of getMatchingValues(); let last = last">
+      <div class="ar-input-autocomplete-matching ar-color-{{color}}" (click)="clickValue(completeValue)">{{completeValue}}</div>
+      <div class="ar-input-autocomplete-separator ar-background-color-{{color}}" *ngIf="!last"></div>
+    </ng-container>
+    <ng-container *ngIf="getMatchingValues().length === 0">
+      <div>{{noMatchingText}}</div>
+    </ng-container>
+  </div>
+</div>
