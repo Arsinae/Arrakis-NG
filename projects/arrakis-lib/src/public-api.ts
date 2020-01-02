@@ -32,6 +32,11 @@ export * from './lib/carousel/carousel.module';
 export * from './lib/carousel/carousel.component';
 export * from './lib/carousel/carousel-box/carousel-box.component';
 
+//    CHECK-BOX
+export * from './lib/check-box/check-box.module';
+export * from './lib/check-box/check-box.component';
+export * from './lib/check-box/check-box-option/check-box-option.component';
+
 //    CONFIRM MODAL
 export * from './lib/confirm-modal/confirm-modal.module';
 export * from './lib/confirm-modal/confirm-modal.component';
@@ -71,6 +76,11 @@ export * from './lib/notation/notation.component';
 //    PROGRESS BAR
 export * from './lib/progress-bar/progress-bar.module';
 export * from './lib/progress-bar/progress-bar.component';
+
+//    RADIO BUTTON
+export * from './lib/radio-button/radio-button.module';
+export * from './lib/radio-button/radio-button.component';
+export * from './lib/radio-button/radio-button-option/radio-button-option.component';
 
 //    SELECT
 export * from './lib/select/select.module';

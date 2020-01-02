@@ -1,0 +1,48 @@
+.ar-radio-button-container {
+  cursor: pointer;
+  padding: calc(var(--ar-padding) / 2);
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  display: table-cell;
+  vertical-align: baseline;
+
+  &:not(:hover) {
+    color: var(--ar-text-color);
+  }
+
+  &:active {
+    background-color: var(--ar-background-color);
+  }
+
+  &.ar-radio-buton-line {
+    display: block;
+  }
+
+  .ar-check-mark {
+    position: relative;
+    width: 21px; height: 21px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: calc(var(--ar-padding) / 2) var(--ar-padding);
+    border-radius: 50%;
+    box-sizing: border-box;
+    transition: all 0.1s ease-in-out;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 12px; height: 12px;
+      border-radius: 50%;
+    }
+
+    &.ar-checked {
+      border: 2px solid var(--ar-background-color);
+    }
+
+    &:not(.ar-checked) {
+      background-color: var(--ar-background-color);
+    }
+  }
+}

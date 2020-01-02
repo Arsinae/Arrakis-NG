@@ -1,0 +1,46 @@
+.ar-checkbox-container {
+  cursor: pointer;
+  padding: calc(var(--ar-padding) / 2);
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  display: table-cell;
+  vertical-align: baseline;
+
+  &:not(:hover) {
+    color: var(--ar-text-color);
+  }
+
+  &:active {
+    background-color: var(--ar-background-color);
+  }
+
+  &.ar-checkbox-line {
+    display: flex;
+  }
+
+  .ar-checkmark {
+    position: relative;
+    width: 20px; height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: calc(var(--ar-padding) / 2) var(--ar-padding);
+    transition: all 0.3s ease-in-out;
+
+    &:after {
+      content: '';
+      position: absolute;
+    }
+
+    &:not(.ar-checked) {
+      background-color: var(--ar-background-color);
+    }
+
+    &.ar-checked:after {
+      width: 6px; height: 12px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      top: 2px; left: 6px;
+      transform: rotate(45deg);
+    }
+  }
+}

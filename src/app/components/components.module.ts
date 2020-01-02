@@ -35,6 +35,8 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { TextEditorComponent } from './text-editor/text-editor.component';
 import { SelectComponent } from './select/select.component';
 import { InputAutocompleteComponent } from './input-autocomplete/input-autocomplete.component';
+import { CheckBoxComponent } from './check-box/check-box.component';
+import { RadioButtonComponent } from './radio-button/radio-button.component';
 
 
 export function hljsLanguages() {
@@ -72,7 +74,9 @@ export function hljsLanguages() {
     CarouselComponent,
     TextEditorComponent,
     SelectComponent,
-    InputAutocompleteComponent
+    InputAutocompleteComponent,
+    CheckBoxComponent,
+    RadioButtonComponent
   ],
   imports: [
     CommonModule,

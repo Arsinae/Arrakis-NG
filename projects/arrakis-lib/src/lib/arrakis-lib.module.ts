@@ -22,11 +22,13 @@ import { ARSwitchModule } from './switch/switch.module';
 import { ARTabsModule } from './tabs/tabs.module';
 import { ARCarouselModule } from './carousel/carousel.module';
 import { ARTextEditorModule } from './text-editor/text-editor.module';
+import { ARSelectModule } from './select/select.module';
+import { ARInputAutocompleteModule } from './input-autocomplete/input-autocomplete.module';
+import { ARCheckBoxModule } from './check-box/check-box.module';
+import { ARRadioButtonModule } from './radio-button/radio-button.module';
 
 import { ARAlertService } from './alert/alert.service';
 import { ARSnackBarService } from './snack-bar/snack-bar.service';
-import { ARSelectModule } from './select/select.module';
-import { ARInputAutocompleteModule } from './input-autocomplete/input-autocomplete.module';
 
 @NgModule({
   imports: [
@@ -54,6 +56,8 @@ import { ARInputAutocompleteModule } from './input-autocomplete/input-autocomple
     ARTextEditorModule,
     ARButtonModule,
     ARSwitchModule,
+    ARCheckBoxModule,
+    ARRadioButtonModule
   ],
   exports: [
     ARCardModule,
@@ -80,6 +84,8 @@ import { ARInputAutocompleteModule } from './input-autocomplete/input-autocomple
     ARTextEditorModule,
     ARButtonModule,
     ARSwitchModule,
+    ARCheckBoxModule,
+    ARRadioButtonModule
   ],
   declarations: [],
 })

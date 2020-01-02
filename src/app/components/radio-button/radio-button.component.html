@@ -1,0 +1,34 @@
+<div class="component-name">
+  Boutons Radio
+</div>
+
+<div class="input-container">
+  <ar-radio-button color="2" display="inline" [(value)]="value">
+    <ar-radio-button-option text="Arrakis"></ar-radio-button-option>
+    <ar-radio-button-option text="Caladan"></ar-radio-button-option>
+    <ar-radio-button-option text="Giedi Prime"></ar-radio-button-option>
+  </ar-radio-button>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    API
+  </div>
+
+  <table class="explanation-title">
+    <tr *ngFor="let explanation of explanations">
+      <td>{{explanation.title}}</td>
+      <td>{{explanation.explanation}}</td>
+    </tr>
+  </table>
+</div>
+
+<div class="explanation">
+  <div class="explanation-header">
+    Exemple
+  </div>
+  <div>
+    <pre><code [highlight]="htmlCode"></code></pre>
+    <pre><code [highlight]="tsCode"></code></pre>
+  </div>
+</div>
