@@ -7,7 +7,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ARCheckBoxOptionComponent implements OnInit {
 
-  @Input() text = '';
+  @Input() text: string = '';
+  @Input() disabled: boolean = false;
 
   @Output() checkedChange: EventEmitter<any> = new EventEmitter();
 
@@ -21,9 +22,16 @@ export class ARCheckBoxOptionComponent implements OnInit {
   }
 
   changeCheck() {
-    this.checked = !this.checked;
-    console.log(this.display);
-    this.checkedChange.emit(this.checked);
+    if (!this.disabled) {
+      this.checked = !this.checked;
+      console.log(this.display);
+      this.checkedChange.emit(this.checked);
+    }
+  }
+
+  get CheckBoxClasses() {
+    const classes = `ar-checkbox-container ar-color-${this.color}-hover ar-checkbox-${this.display}`;
+    return (this.disabled) ? `${classes} ar-disabled` : classes;
   }
 
 }

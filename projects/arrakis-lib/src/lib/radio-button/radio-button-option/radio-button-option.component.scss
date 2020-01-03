@@ -6,6 +6,11 @@
   display: table-cell;
   vertical-align: baseline;
 
+  &.ar-disabled {
+    color: var(--ar-text-color);
+    cursor: not-allowed;
+  }
+
   &:not(:hover) {
     color: var(--ar-text-color);
   }

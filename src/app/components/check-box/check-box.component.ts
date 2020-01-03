@@ -27,6 +27,7 @@ export class CheckBoxComponent implements OnInit {
       {title: '', explanation: ''},
       {title: 'Balise HTML', explanation: 'ar-check-box-option'},
       {title: '@Input() text', explanation: 'Texte de l\'option; String: \'\'(défaut)'},
+      {title: '@Input() disabled', explanation: 'Désactive l\'option; Boolean: false(défaut)'},
       {title: '@Output() checkedChange', explanation: 'Emission d\'évènement lors du clic sur l\'option; Boolean'},
     ];
   }
