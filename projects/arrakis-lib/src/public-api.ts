@@ -111,6 +111,10 @@ export * from './lib/tabs/tab/tab.component';
 export * from './lib/testimonial-card/testimonial-card.module';
 export * from './lib/testimonial-card/testimonial-card.component';
 
+//    TEXTAREA
+export * from './lib/textarea/textarea.module';
+export * from './lib/textarea/textarea.component';
+
 //    TEXT EDITOR
 export * from './lib/text-editor/text-editor.module';
 export * from './lib/text-editor/text-editor.component';

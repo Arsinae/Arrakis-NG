@@ -22,6 +22,7 @@ import { ARSwitchModule } from './switch/switch.module';
 import { ARTabsModule } from './tabs/tabs.module';
 import { ARCarouselModule } from './carousel/carousel.module';
 import { ARTextEditorModule } from './text-editor/text-editor.module';
+import { ARTextareaModule } from './textarea/textarea.module';
 import { ARSelectModule } from './select/select.module';
 import { ARInputAutocompleteModule } from './input-autocomplete/input-autocomplete.module';
 import { ARCheckBoxModule } from './check-box/check-box.module';
@@ -53,6 +54,7 @@ import { ARSnackBarService } from './snack-bar/snack-bar.service';
     ARInputFileModule,
     ARInputAutocompleteModule,
     ARSelectModule,
+    ARTextareaModule,
     ARTextEditorModule,
     ARButtonModule,
     ARSwitchModule,
@@ -81,6 +83,7 @@ import { ARSnackBarService } from './snack-bar/snack-bar.service';
     ARInputFileModule,
     ARInputAutocompleteModule,
     ARSelectModule,
+    ARTextareaModule,
     ARTextEditorModule,
     ARButtonModule,
     ARSwitchModule,

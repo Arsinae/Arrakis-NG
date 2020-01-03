@@ -24,7 +24,6 @@ export class ARCheckBoxComponent implements OnInit {
 
   ngAfterViewInit() {
     this.options.forEach(option => {
-      console.log(option);
       this.setColorOption(option);
       this.setDisplay(option);
       this.setChecked(option);
@@ -58,7 +57,6 @@ export class ARCheckBoxComponent implements OnInit {
   }
 
   subscribeToChecked(option: ARCheckBoxOptionComponent) {
-    console.log(option.checkedChange)
     if (option.checkedChange.observers.length === 0) {
       option.checkedChange.subscribe(check => {
         if (check) {

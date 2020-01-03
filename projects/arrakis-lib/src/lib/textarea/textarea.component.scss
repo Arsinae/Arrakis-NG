@@ -1,0 +1,23 @@
+.ar-textarea {
+  border-top: none; border-left: none;
+  width: 100%;
+  color: var(--ar-text-color);
+  resize: vertical;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:not(:focus) {
+    border-color: var(--ar-text-color);
+  }
+
+  &:not(.ar-resizable) {
+    resize: none;
+  }
+
+  &.ar-disabled {
+    background-color: var(--ar-background-color);
+    cursor: not-allowed;
+  }
+}
