@@ -30,6 +30,7 @@
     vertical-align: middle;
     margin: calc(var(--ar-padding) / 2) var(--ar-padding);
     transition: all 0.3s ease-in-out;
+    border-radius: 6px;
 
     &:after {
       content: '';

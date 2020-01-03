@@ -1,28 +1,28 @@
 :root {
 
-  --ar-primary: #95B46A;
-  --ar-secondary: #3E5622;
+  --ar-primary: #034732;
+  --ar-secondary: #008258;
 
   --ar-background-color: #f2f2f2;
-  --ar-text-color: #424242;
+  --ar-text-color: black;
   
-  --ar-color1: #235858;
-  --ar-color2: #302358;
-  --ar-color3: #235823;
-  --ar-color4: #582358;
-  --ar-color5: #582323;
-  --ar-color6: #584a23;
-  --ar-color7: #585823;
+  --ar-color1: #008080;
+  --ar-color2: #200080;
+  --ar-color3: #008040;
+  --ar-color4: #600080;
+  --ar-color5: #800000;
+  --ar-color6: #804000;
+  --ar-color7: #808000;
 
-  --ar-danger: #582323;
-  --ar-warning: #585823;
-  --ar-info: #302358;
-  --ar-success: #235823;
+  --ar-danger: #800000;
+  --ar-warning: #808000;
+  --ar-info: #200080;
+  --ar-success: #008040;
 
-  --ar-gradient1: linear-gradient(90deg, #235858 10%, #302358 90%);
-  --ar-gradient2: linear-gradient(45deg, #585823 10%, #582323 90%);
-  --ar-gradient3: linear-gradient(90deg, #235858 10%, #235823 90%);
-  --ar-gradient4: linear-gradient(90deg, #582358 10%, #582323 90%);
+  --ar-gradient1: linear-gradient(90deg, #008080 10%, #200080 90%);
+  --ar-gradient2: linear-gradient(45deg, #808000 10%, #800000 90%);
+  --ar-gradient3: linear-gradient(90deg, #008080 10%, #008040 90%);
+  --ar-gradient4: linear-gradient(90deg, #600080 10%, #800000 90%);
 
   --ar-padding: 6px;
 
