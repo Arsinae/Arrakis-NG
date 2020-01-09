@@ -1,0 +1,18 @@
+.ar-input-color-slider {
+  width: 200px; height: 12px;
+  margin: 6px;
+  border-radius: 6px / 50%;
+  cursor: pointer;
+  position: relative;
+
+  .ar-slider-circle {
+    position: absolute;
+    top: 0; left: 0;
+    width: 12px; height: 12px;
+    border: 1px solid var(--ar-text-color);
+    box-sizing: border-box;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    transition: all .2s linear;
+  }
+}

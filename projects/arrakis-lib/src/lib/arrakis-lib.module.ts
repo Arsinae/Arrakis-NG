@@ -30,6 +30,7 @@ import { ARRadioButtonModule } from './radio-button/radio-button.module';
 
 import { ARAlertService } from './alert/alert.service';
 import { ARSnackBarService } from './snack-bar/snack-bar.service';
+import { ARInputColorModule } from './input-color/input-color.module';
 
 @NgModule({
   imports: [
@@ -53,6 +54,7 @@ import { ARSnackBarService } from './snack-bar/snack-bar.service';
     ARInputNumberModule,
     ARInputFileModule,
     ARInputAutocompleteModule,
+    ARInputColorModule,
     ARSelectModule,
     ARTextareaModule,
     ARTextEditorModule,
@@ -82,6 +84,7 @@ import { ARSnackBarService } from './snack-bar/snack-bar.service';
     ARInputNumberModule,
     ARInputFileModule,
     ARInputAutocompleteModule,
+    ARInputColorModule,
     ARSelectModule,
     ARTextareaModule,
     ARTextEditorModule,

@@ -1,0 +1,40 @@
+<div class="ar-input-color-container">
+  <div class="ar-input-color-display" (click)="open = !open">
+    <div class="ar-input-color-circle" [style.backgroundColor]="value"></div>
+    <div class="ar-input-color-text">{{ value }}</div>
+  </div>
+  
+  <div class="ar-input-color-window" [class.ar-window-open]="open">
+    <div class="ar-color-type-changer">
+      <div [class.ar-color-type-selected]="displayType === 'rgba'" (click)="changeDisplayType('rgba')">RGBA</div>
+      <div [class.ar-color-type-selected]="displayType === 'hsla'" (click)="changeDisplayType('hsla')">HSLA</div>
+    </div>
+    <div class="ar-input-color-changer">
+      <ar-input-color-slider [color]="colorIndex" (colorChange)="changeColor($event)" [index]="0"
+        [display]="displayType" [max]="displayType === 'rgba' ? 255 : 360">
+      </ar-input-color-slider>
+      <div class="ar-input-color-slider-value">{{ colorIndex[0] }}</div>
+    </div>
+
+    <div class="ar-input-color-changer">
+      <ar-input-color-slider [color]="colorIndex" (colorChange)="changeColor($event)" [index]="1"
+        [display]="displayType" [max]="displayType === 'rgba' ? 255 : 100">
+      </ar-input-color-slider>
+      <div class="ar-input-color-slider-value">{{ colorIndex[1] }}</div>
+    </div>
+
+    <div class="ar-input-color-changer">
+      <ar-input-color-slider [color]="colorIndex" (colorChange)="changeColor($event)" [index]="2"
+        [display]="displayType" [max]="displayType === 'rgba' ? 255 : 100">
+      </ar-input-color-slider>
+      <div class="ar-input-color-slider-value">{{ colorIndex[2] }}</div>
+    </div>
+
+    <div class="ar-input-color-changer">
+      <ar-input-color-slider [color]="colorIndex" (colorChange)="changeColor($event)" [index]="3"
+        [display]="displayType">
+      </ar-input-color-slider>
+      <div class="ar-input-color-slider-value">{{ colorIndex[3] }}</div>
+    </div>
+  </div>
+</div>

@@ -57,6 +57,11 @@ export * from './lib/input/input.component';
 export * from './lib/input-autocomplete/input-autocomplete.module';
 export * from './lib/input-autocomplete/input-autocomplete.component';
 
+//    INPUT COLOR
+export * from './lib/input-color/input-color.module';
+export * from './lib/input-color/input-color.component';
+export * from './lib/input-color/input-color-slider/input-color-slider.component'
+
 //    INPUT FILE
 export * from './lib/input-file/input-file.module';
 export * from './lib/input-file/input-file.component';

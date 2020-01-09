@@ -1,0 +1,52 @@
+.ar-input-color-container {
+  position: relative;
+}
+
+.ar-input-color-display {
+  display: flex;
+  color: var(--at-text-color);
+  cursor: pointer;
+
+  .ar-input-color-circle {
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 1px solid var(--ar-text-color);
+    border-radius: 50%;
+    margin: var(--ar-padding);
+  }
+}
+
+.ar-input-color-window {
+  position: absolute;
+  top: calc(100% - var(--ar-padding)); left: -6px;
+  padding: 6px;
+  box-shadow: var(--ar-shadow);
+  background-color: var(--ar-background-color);
+  font-size: 12px;
+
+  &:not(.ar-window-open) {
+    display: none;
+  }
+}
+
+.ar-color-type-changer {
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--ar-text-color);
+  font-weight: 600;
+
+  &>div {
+    padding: 0 12px;
+    cursor: pointer;
+
+    &.ar-color-type-selected {
+      border-bottom: 1px solid var(--ar-secondary);
+      color: var(--ar-secondary);
+    }
+  }
+}
+
+.ar-input-color-changer {
+  display: flex;
+}

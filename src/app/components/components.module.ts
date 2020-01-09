@@ -38,6 +38,7 @@ import { InputAutocompleteComponent } from './input-autocomplete/input-autocompl
 import { CheckBoxComponent } from './check-box/check-box.component';
 import { RadioButtonComponent } from './radio-button/radio-button.component';
 import { TextareaComponent } from './textarea/textarea.component';
+import { InputColorComponent } from './input-color/input-color.component';
 
 
 export function hljsLanguages() {
@@ -78,7 +79,8 @@ export function hljsLanguages() {
     InputAutocompleteComponent,
     CheckBoxComponent,
     RadioButtonComponent,
-    TextareaComponent
+    TextareaComponent,
+    InputColorComponent
   ],
   imports: [
     CommonModule,
