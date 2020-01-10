@@ -9,6 +9,7 @@ export class ARInputColorComponent implements OnInit, OnChanges {
 
   @Input() value: string | Array<number> = '#000000ff';
   @Input() type: string = 'hexa';
+  @Input() display: string = 'both';
 
   @Output() valueChange: EventEmitter<string | Array<number>> = new EventEmitter();
 
@@ -23,6 +24,24 @@ export class ARInputColorComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes) {
     if (changes.value) {
+      if (this.type === 'hexa') {
+        this.colorIndex = this.hexToRGB(this.value);
+        if (this.displayType === 'hsla') {
+          this.colorIndex = this.rgbToHsl(this.colorIndex);
+        }
+      } else {
+        this.colorIndex = [...<Array<number>>this.value];
+      }
+    }
+  }
+
+  get PinsBackground() {
+    if (this.type === 'hexa') {
+      return this.value;
+    } else if (this.type === 'rgb') {
+      return `rgba(${this.value[0]},${this.value[1]},${this.value[2]},${(<number>this.value[3] / 255).toString()})`;
+    } else if (this.type === 'hsl') {
+      return `hsla(${this.value[0]},${this.value[1]},${this.value[2]},${(<number>this.value[3] / 255).toString()})`;
     }
   }
 

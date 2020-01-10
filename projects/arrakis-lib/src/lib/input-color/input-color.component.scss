@@ -49,4 +49,11 @@
 
 .ar-input-color-changer {
   display: flex;
+
+  &>input {
+    width: 35px;
+    border: none;
+    background: none;
+    outline: none;
+  }
 }

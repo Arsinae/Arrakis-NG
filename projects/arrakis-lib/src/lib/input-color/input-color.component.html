@@ -1,7 +1,7 @@
 <div class="ar-input-color-container">
   <div class="ar-input-color-display" (click)="open = !open">
-    <div class="ar-input-color-circle" [style.backgroundColor]="value"></div>
-    <div class="ar-input-color-text">{{ value }}</div>
+    <div class="ar-input-color-circle" *ngIf="display !== 'value'" [style.backgroundColor]="PinsBackground"></div>
+    <div class="ar-input-color-text" *ngIf="display !== 'pins'">{{ value }}</div>
   </div>
   
   <div class="ar-input-color-window" [class.ar-window-open]="open">
@@ -13,28 +13,28 @@
       <ar-input-color-slider [color]="colorIndex" (colorChange)="changeColor($event)" [index]="0"
         [display]="displayType" [max]="displayType === 'rgba' ? 255 : 360">
       </ar-input-color-slider>
-      <div class="ar-input-color-slider-value">{{ colorIndex[0] }}</div>
+      <input class="ar-input-color-slider-value" [(ngModel)]="colorIndex[0]" type="number" [max]="displayType === 'rgba' ? 255 : 360" min="0">
     </div>
 
     <div class="ar-input-color-changer">
       <ar-input-color-slider [color]="colorIndex" (colorChange)="changeColor($event)" [index]="1"
         [display]="displayType" [max]="displayType === 'rgba' ? 255 : 100">
       </ar-input-color-slider>
-      <div class="ar-input-color-slider-value">{{ colorIndex[1] }}</div>
+      <input class="ar-input-color-slider-value" [(ngModel)]="colorIndex[1]" type="number" [max]="displayType === 'rgba' ? 255 : 100" min="0">
     </div>
 
     <div class="ar-input-color-changer">
       <ar-input-color-slider [color]="colorIndex" (colorChange)="changeColor($event)" [index]="2"
         [display]="displayType" [max]="displayType === 'rgba' ? 255 : 100">
       </ar-input-color-slider>
-      <div class="ar-input-color-slider-value">{{ colorIndex[2] }}</div>
+      <input class="ar-input-color-slider-value" [(ngModel)]="colorIndex[2]" type="number" [max]="displayType === 'rgba' ? 255 : 100" min="0">
     </div>
 
     <div class="ar-input-color-changer">
       <ar-input-color-slider [color]="colorIndex" (colorChange)="changeColor($event)" [index]="3"
         [display]="displayType">
       </ar-input-color-slider>
-      <div class="ar-input-color-slider-value">{{ colorIndex[3] }}</div>
+      <input class="ar-input-color-slider-value" [(ngModel)]="colorIndex[3]" type="number" [max]="255" min="0">
     </div>
   </div>
 </div>
