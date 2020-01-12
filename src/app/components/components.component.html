@@ -8,34 +8,102 @@
   </div>
 </div>
 
-<div id="components-list">
-  <app-card></app-card>
-  <app-flipping-card></app-flipping-card>
-  <app-testimonial-card></app-testimonial-card>
-  <app-fixed-background></app-fixed-background>
-  <app-table></app-table>
-  <app-accordion></app-accordion>
-  <app-tabs></app-tabs>
-  <app-carousel></app-carousel>
-  <app-modal></app-modal>
-  <app-confirm-modal></app-confirm-modal>
-  <app-alert></app-alert>
-  <app-snack-bar></app-snack-bar>
-  <app-tooltip></app-tooltip>
-  <app-breadcrumb></app-breadcrumb>
-  <app-progress-bar></app-progress-bar>
-  <app-notation></app-notation>
+<div id="components-container">
+  <div id="components-menu">
+    <div id="menu-container" [class.is-fixed]="isFixed">
+      <div *ngFor="let component of components" [class.menu-selected]="component.id === currentSelected" (click)="scrollToElement(component.id)">
+        {{ component.name }}
+      </div>
+    </div>
+  </div>
 
-  <app-input></app-input>
-  <app-input-number></app-input-number>
-  <app-input-file></app-input-file>
-  <app-input-autocomplete></app-input-autocomplete>
-  <app-input-color></app-input-color>
-  <app-select></app-select>
-  <app-textarea></app-textarea>
-  <app-text-editor></app-text-editor>
-  <app-button></app-button>
-  <app-switch></app-switch>
-  <app-check-box></app-check-box>
-  <app-radio-button></app-radio-button>
+  <div id="components-list" #componentList>
+    <div id="card">
+      <app-card></app-card>
+    </div>
+    <div id="flipping-card">
+      <app-flipping-card></app-flipping-card>
+    </div>
+    <div id="testimonial-card">
+      <app-testimonial-card></app-testimonial-card>
+    </div>
+    <div id="fixed-background">
+      <app-fixed-background></app-fixed-background>
+    </div>
+    <div id="table">
+      <app-table></app-table>
+    </div>
+    <div id="accordion">
+      <app-accordion></app-accordion>
+    </div>
+    <div id="tabs">
+      <app-tabs></app-tabs>
+    </div>
+    <div id="carousel">
+      <app-carousel></app-carousel>
+    </div>
+    <div id="modal">
+      <app-modal></app-modal>
+    </div>
+    <div id="confirm-modal">
+      <app-confirm-modal></app-confirm-modal>
+    </div>
+    <div id="alert">
+      <app-alert></app-alert>
+    </div>
+    <div id="snack-bar">
+      <app-snack-bar></app-snack-bar>
+    </div>
+    <div id="tooltip">
+      <app-tooltip></app-tooltip>
+    </div>
+    <div id="breadcrumbs">
+      <app-breadcrumb></app-breadcrumb>
+    </div>
+    <div id="progress-bar">
+      <app-progress-bar></app-progress-bar>
+    </div>
+    <div id="notation">
+      <app-notation></app-notation>
+    </div>
+    <div id="input">
+      <app-input></app-input>
+    </div>
+    <div id="input-number">
+      <app-input-number></app-input-number>
+    </div>
+    <div id="input-file">
+      <app-input-file></app-input-file>
+    </div>
+    <div id="input-autocomplete">
+      <app-input-autocomplete></app-input-autocomplete>
+    </div>
+    <div id="input-color">
+      <app-input-color></app-input-color>
+    </div>
+    <div id="select">
+      <app-select></app-select>
+    </div>
+    <div id="textarea">
+      <app-textarea></app-textarea>
+    </div>
+    <div id="text-editor">
+      <app-text-editor></app-text-editor>
+    </div>
+    <div id="button">
+      <app-button></app-button>
+    </div>
+    <div id="switch">
+      <app-switch></app-switch>
+    </div>
+    <div id="check-box">
+      <app-check-box></app-check-box>
+    </div>
+    <div id="radio-button">
+      <app-radio-button></app-radio-button>
+    </div>
+    <div id="scroll-spy">
+      <app-scroll-spy></app-scroll-spy>
+    </div>
+  </div>
 </div>

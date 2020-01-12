@@ -27,10 +27,11 @@ import { ARSelectModule } from './select/select.module';
 import { ARInputAutocompleteModule } from './input-autocomplete/input-autocomplete.module';
 import { ARCheckBoxModule } from './check-box/check-box.module';
 import { ARRadioButtonModule } from './radio-button/radio-button.module';
+import { ARInputColorModule } from './input-color/input-color.module';
 
 import { ARAlertService } from './alert/alert.service';
 import { ARSnackBarService } from './snack-bar/snack-bar.service';
-import { ARInputColorModule } from './input-color/input-color.module';
+import { ARScrollSpyService } from './scroll-spy/scroll-spy.service';
 
 @NgModule({
   imports: [
@@ -101,7 +102,8 @@ export class ArrakisLibModule {
       ngModule: ArrakisLibModule,
       providers: [
         ARAlertService,
-        ARSnackBarService
+        ARSnackBarService,
+        ARScrollSpyService
       ]
     };
   }

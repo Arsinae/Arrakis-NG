@@ -14,9 +14,55 @@
     position: absolute;
     font-size: 16px;
     top: 6px; right: 6px;
+    cursor: pointer;
+  }
+}
+
+#components-container {
+  display: flex;
+}
+
+#components-menu {
+  font-size: 12px;
+  width: 130px; min-width: 130px;
+  color: var(--ar-text-color);
+  position: relative;
+
+  #menu-container {
+    width: 130px;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+
+    &.is-fixed {
+      position: fixed;
+      top: 0; left: 0;
+      height: 100vh;
+    }
+
+    &>div {
+      cursor: pointer;
+      padding: 2px 3px;
+
+      &:hover {
+        color: var(--ar-secondary);
+      }
+
+      &.menu-selected {
+        color: var(--ar-primary);
+        border-bottom: 1px solid var(--ar-primary);
+        font-weight: bold;
+      }
+    }
   }
 }
 
 #components-list {
-  padding: 12px 5%;
+  padding: 12px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 750px) {
+  #components-menu {
+    display: none;
+  }
 }
