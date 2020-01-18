@@ -10,8 +10,8 @@ export class ScrollSpyComponent implements OnInit {
   public htmlCode = '<div #container>\n  <div>\n    <div>A</div>\n    <div>B</div>\n    <div>C</div>\n  </div>\n  <div>D</div>\n  <div>E</div>\n</div>\n';
   public tsCode = '@ViewChild(\'container\', {static: false}) container: ElementRef;\npublic scrollSpy = null;\n\ncontructor(private scrollServicce: ARScrollSpyService) { }\n\n' +
     'ngAfterViewInit() {\n  this.createNavSpy();\n}\n\nngOnDestroy() {\n  this.scrollService.unsubscribe(this.scrollSpy);\n}\n\n' +
-    'createNavSpy() {\n  this.scrollSpy = this.scrollService.createNavSpy(this.container.nativeElement, 2);\n' +
-    '    this.scrollSpy.subscribe(element => {\n      console.log(element);\n    }\n  })\n}\n';
+    'createNavSpy() {\n  this.scrollSpy = this.scrollService.createNavSpy(this.container.nativeElement, 2).subscribe(element => {\n' +
+    '      console.log(element);\n    }\n  })\n}\n';
   public explanations: Array<{title: string, explanation: string}> = [];
 
   constructor() { }

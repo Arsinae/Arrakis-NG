@@ -72,8 +72,7 @@ export class ComponentsComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   createNavSpy() {
-    this.scrollSpy = this.navSpyService.createNavSpy(this.componentList.nativeElement, 1);
-    this.scrollSpy.subscribe(element => {
+    this.scrollSpy = this.navSpyService.createNavSpy(this.componentList.nativeElement, 1).subscribe(element => {
       if (element) {
         this.currentSelected = element.id;
       }

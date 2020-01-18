@@ -1,0 +1,29 @@
+<ar-alert></ar-alert>
+<ar-snack-bar></ar-snack-bar>
+
+<div id="theme-headerbar">
+  Les thèmes
+  <div class="theme-changer" (click)="changeTheme()">
+    Changer de thèmes
+  </div>
+</div>
+
+<div id="left-container">
+  <div id="theme-menu">
+    <div id="menu-container" [class.is-fixed]="isFixed">
+      <div class="main-menu-element" [routerLink]="['/theme']">
+        <span><i class="fas fa-palette"></i></span>
+        Thèmes
+      </div>
+      <div class="main-menu-element" [routerLink]="['/components']">
+        <span><i class="fas fa-puzzle-piece"></i></span>
+        Composants
+      </div>
+    </div>
+  </div>
+
+  <div class="theme-container">
+    <div (click)="downloadTheme('mytheme.css')">Télécharger</div>
+  </div>
+
+</div>

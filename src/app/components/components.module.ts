@@ -40,6 +40,7 @@ import { RadioButtonComponent } from './radio-button/radio-button.component';
 import { TextareaComponent } from './textarea/textarea.component';
 import { InputColorComponent } from './input-color/input-color.component';
 import { ScrollSpyComponent } from './scroll-spy/scroll-spy.component';
+import { RouterModule } from '@angular/router';
 
 
 export function hljsLanguages() {
@@ -88,6 +89,7 @@ export function hljsLanguages() {
     CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
+    RouterModule,
     HighlightModule.forRoot({languages: hljsLanguages}),
     ArrakisLibModule
   ],

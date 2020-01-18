@@ -1,5 +1,5 @@
 
-#components-headerbar {
+#theme-headerbar {
   width: 100%;
   background-image: var(--ar-gradient4);
   padding: 35px 0;
@@ -18,11 +18,11 @@
   }
 }
 
-#components-container {
+#left-container {
   display: flex;
 }
 
-#components-menu {
+#theme-menu {
   font-size: 12px;
   width: 160px; min-width: 160px;
   color: var(--ar-text-color);
@@ -66,13 +66,8 @@
   }
 }
 
-#components-list {
-  padding: 12px;
-  overflow: hidden;
-}
-
 @media screen and (max-width: 750px) {
-  #components-menu {
+  #theme-menu {
     display: none;
   }
 }
