@@ -52,6 +52,11 @@ export class ARInputColorComponent implements OnInit, OnChanges {
     }
   }
 
+  changeInputNumberValue(colorValue, index) {
+    this.colorIndex[index] = colorValue;
+    this.changeColor(this.colorIndex);
+  }
+
   changeColor(color) {
     this.colorIndex = color;
     if (this.displayType === 'rgba') {

@@ -13,28 +13,28 @@
       <ar-input-color-slider [color]="colorIndex" (colorChange)="changeColor($event)" [index]="0"
         [display]="displayType" [max]="displayType === 'rgba' ? 255 : 360">
       </ar-input-color-slider>
-      <input class="ar-input-color-slider-value" [(ngModel)]="colorIndex[0]" type="number" [max]="displayType === 'rgba' ? 255 : 360" min="0">
+      <input class="ar-input-color-slider-value" [ngModel]="colorIndex[0]" (ngModelChange)="changeInputNumberValue($event, 0)" type="number" [max]="displayType === 'rgba' ? 255 : 360" min="0">
     </div>
 
     <div class="ar-input-color-changer">
       <ar-input-color-slider [color]="colorIndex" (colorChange)="changeColor($event)" [index]="1"
         [display]="displayType" [max]="displayType === 'rgba' ? 255 : 100">
       </ar-input-color-slider>
-      <input class="ar-input-color-slider-value" [(ngModel)]="colorIndex[1]" type="number" [max]="displayType === 'rgba' ? 255 : 100" min="0">
+      <input class="ar-input-color-slider-value" [ngModel]="colorIndex[1]" (ngModelChange)="changeInputNumberValue($event, 1)" type="number" [max]="displayType === 'rgba' ? 255 : 100" min="0">
     </div>
 
     <div class="ar-input-color-changer">
       <ar-input-color-slider [color]="colorIndex" (colorChange)="changeColor($event)" [index]="2"
         [display]="displayType" [max]="displayType === 'rgba' ? 255 : 100">
       </ar-input-color-slider>
-      <input class="ar-input-color-slider-value" [(ngModel)]="colorIndex[2]" type="number" [max]="displayType === 'rgba' ? 255 : 100" min="0">
+      <input class="ar-input-color-slider-value" [ngModel]="colorIndex[2]" (ngModelChange)="changeInputNumberValue($event, 2)" type="number" [max]="displayType === 'rgba' ? 255 : 100" min="0">
     </div>
 
     <div class="ar-input-color-changer">
       <ar-input-color-slider [color]="colorIndex" (colorChange)="changeColor($event)" [index]="3"
         [display]="displayType">
       </ar-input-color-slider>
-      <input class="ar-input-color-slider-value" [(ngModel)]="colorIndex[3]" type="number" [max]="255" min="0">
+      <input class="ar-input-color-slider-value" [ngModel]="colorIndex[3]" (ngModelChange)="changeInputNumberValue($event, 3)" type="number" [max]="255" min="0">
     </div>
   </div>
 </div>

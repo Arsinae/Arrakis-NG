@@ -24,6 +24,7 @@
   box-shadow: var(--ar-shadow);
   background-color: var(--ar-background-color);
   font-size: 12px;
+  z-index: 1;
 
   &:not(.ar-window-open) {
     display: none;
