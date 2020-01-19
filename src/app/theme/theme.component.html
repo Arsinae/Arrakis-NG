@@ -23,6 +23,43 @@
   </div>
 
   <div class="theme-container">
+    <div class="component-name">Créér son propre thème</div>
+
+    <div class="theme-creator">
+      <div class="theme-data">
+        <div class="theme-part">
+          <div class="data-title">Couleurs principales</div>
+          <app-theme-input class="theme-input" [(value)]="theme.primary" label="Couleur Primaire"></app-theme-input>
+          <app-theme-input class="theme-input" [(value)]="theme.secondary" label="Couleur Secondaire"></app-theme-input>
+          <app-theme-input class="theme-input" [(value)]="theme.textColor" label="Couleur de Texte"></app-theme-input>
+          <app-theme-input class="theme-input" [(value)]="theme.backgroundColor" label="Couleur de Fond"></app-theme-input>
+        </div>
+
+        <div class="theme-part">
+          <div class="data-title">Couleurs secondaires</div>
+          <app-theme-input class="theme-input" [(value)]="theme.color1" label="Couleur 1"></app-theme-input>
+          <app-theme-input class="theme-input" [(value)]="theme.color2" label="Couleur 2"></app-theme-input>
+          <app-theme-input class="theme-input" [(value)]="theme.color3" label="Couleur 3"></app-theme-input>
+          <app-theme-input class="theme-input" [(value)]="theme.color4" label="Couleur 4"></app-theme-input>
+          <app-theme-input class="theme-input" [(value)]="theme.color5" label="Couleur 5"></app-theme-input>
+          <app-theme-input class="theme-input" [(value)]="theme.color6" label="Couleur 6"></app-theme-input>
+          <app-theme-input class="theme-input" [(value)]="theme.color7" label="Couleur 7"></app-theme-input>
+        </div>
+
+        <div class="theme-part">
+          <div class="data-title">Couleurs des messages</div>
+          <app-theme-input class="theme-input" [(value)]="theme.success" label="Couleur de Succès"></app-theme-input>
+          <app-theme-input class="theme-input" [(value)]="theme.info" label="Couleur d'Information"></app-theme-input>
+          <app-theme-input class="theme-input" [(value)]="theme.danger" label="Couleur de Danger"></app-theme-input>
+          <app-theme-input class="theme-input" [(value)]="theme.warning" label="Couleur d'Avertissement"></app-theme-input>
+        </div>
+      </div>
+
+      <div class="theme-display">
+        <pre><pre><code [highlight]="CssVariables"></code></pre></pre>
+      </div>
+    </div>
+
     <div (click)="downloadTheme('mytheme.css')">Télécharger</div>
   </div>
 

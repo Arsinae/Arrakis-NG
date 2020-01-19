@@ -66,6 +66,48 @@
   }
 }
 
+.theme-container {
+  width: calc(100vw - 160px);
+  padding: 6px;
+  overflow: hidden;
+
+  .theme-creator {
+    display: flex;
+    flex-wrap: wrap;
+
+    &>* {
+      flex: 1;
+    }
+  }
+}
+
+.theme-data {
+  min-width: 500px;
+  flex: 2;
+
+  .theme-part {
+    display: flex;
+    flex-wrap: wrap;
+    
+    .data-title {
+      color: var(--ar-primary);
+      margin: 3px 6px;
+      border-bottom: 1px solid var(--ar-primary);
+      width: 100%;
+    }
+    
+    .theme-input {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .theme-display {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 750px) {
   #theme-menu {
     display: none;

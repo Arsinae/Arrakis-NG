@@ -29,6 +29,17 @@ export class ThemeComponent implements OnInit {
     document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
   }
 
+  getCssFile() {
+    const data = this.cssWriter.writeCssVariable(this.theme) +
+      this.cssWriter.writeColor('.ar-color-', '') + this.cssWriter.writeColor('.ar-color-', '-hover:hover') +
+      this.cssWriter.writeBackgroundColor('.ar-background-color-', '') + this.cssWriter.writeBackgroundColor('.ar-background-color-', '-hover:hover') +
+      this.cssWriter.writeBorderColor('.ar-border-color-') + this.cssWriter.writeInputColor('.ar-input-color-') + this.cssWriter.writeShadowClass();
+  }
+
+  get CssVariables() {
+    return this.cssWriter.writeCssVariable(this.theme);
+  }
+
   downloadTheme(filename) {
     let data = this.cssWriter.writeCssVariable(this.theme);
     data += this.cssWriter.writeColor('.ar-color-', '') + this.cssWriter.writeColor('.ar-color-', '-hover:hover');

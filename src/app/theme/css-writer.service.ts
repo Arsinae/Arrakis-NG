@@ -93,9 +93,9 @@ export class CssWriterService {
       `  --ar-gradient1: linear-gradient(90deg, ${theme.color1} 10%, ${theme.color2} 90%);\n` +
       `  --ar-gradient2: linear-gradient(90deg, ${theme.color1} 10%, ${theme.color2} 90%);\n` +
       `  --ar-gradient3: linear-gradient(90deg, ${theme.color1} 10%, ${theme.color2} 90%);\n` +
-      `  --ar-gradient4: linear-gradient(90deg, ${theme.color1} 10%, ${theme.color2} 90%);\n` +
+      `  --ar-gradient4: linear-gradient(90deg, ${theme.color1} 10%, ${theme.color2} 90%);\n\n` +
       `  --ar-success: ${theme.success};\n  --ar-info: ${theme.info};\n  --ar-danger: ${theme.danger};\n  --ar-warning: ${theme.warning};\n\n` +
-      `  --ar-padding: ${theme.padding}px;\n  --ar-border: ${theme.border}px;\n  --ar-small-shadow: ${this.writeShadow(theme.smallShadow)};\n` +
+      `  --ar-padding: ${theme.padding}px;\n  --ar-border: ${theme.border}px;\n\n  --ar-small-shadow: ${this.writeShadow(theme.smallShadow)};\n` +
       `  --ar-shadow: ${this.writeShadow(theme.shadow)};\n  --ar-big-shadow: ${this.writeShadow(theme.bigShadow)};\n` +
       `}\n\n`;
     return variables;
