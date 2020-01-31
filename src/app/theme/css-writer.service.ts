@@ -84,16 +84,20 @@ export class CssWriterService {
     return classes;
   }
 
+  writeGradientVariable(theme: Theme): string {
+    return `  --ar-gradient1: linear-gradient(${theme.gradient1.direction}deg, ${theme.gradient1.color1} 10%, ${theme.gradient1.color2} 90%);\n` +
+    `  --ar-gradient1: linear-gradient(${theme.gradient2.direction}deg, ${theme.gradient2.color1} 10%, ${theme.gradient2.color2} 90%);\n` +
+    `  --ar-gradient1: linear-gradient(${theme.gradient3.direction}deg, ${theme.gradient3.color1} 10%, ${theme.gradient3.color2} 90%);\n` +
+    `  --ar-gradient1: linear-gradient(${theme.gradient4.direction}deg, ${theme.gradient4.color1} 10%, ${theme.gradient4.color2} 90%);\n\n`;
+  }
+
   writeCssVariable(theme: Theme): string {
     let variables: string = '';
     variables += `:root {\n  --ar-primary: ${theme.primary};\n  --ar-secondary: ${theme.secondary};\n\n` +
       `  --ar-text-color: ${theme.textColor};\n  --ar-background-color: ${theme.backgroundColor};\n\n` +
       `  --ar-color1: ${theme.color1};\n  --ar-color2: ${theme.color2};\n  --ar-color3: ${theme.color3};\n  --ar-color4: ${theme.color4};\n` +
       `  --ar-color5: ${theme.color5};\n  --ar-color6: ${theme.color6};\n  --ar-color7: ${theme.color7};\n\n` +
-      `  --ar-gradient1: linear-gradient(90deg, ${theme.color1} 10%, ${theme.color2} 90%);\n` +
-      `  --ar-gradient2: linear-gradient(90deg, ${theme.color1} 10%, ${theme.color2} 90%);\n` +
-      `  --ar-gradient3: linear-gradient(90deg, ${theme.color1} 10%, ${theme.color2} 90%);\n` +
-      `  --ar-gradient4: linear-gradient(90deg, ${theme.color1} 10%, ${theme.color2} 90%);\n\n` +
+      this.writeGradientVariable(theme) +
       `  --ar-success: ${theme.success};\n  --ar-info: ${theme.info};\n  --ar-danger: ${theme.danger};\n  --ar-warning: ${theme.warning};\n\n` +
       `  --ar-padding: ${theme.padding}px;\n  --ar-border: ${theme.border}px;\n\n  --ar-small-shadow: ${this.writeShadow(theme.smallShadow)};\n` +
       `  --ar-shadow: ${this.writeShadow(theme.shadow)};\n  --ar-big-shadow: ${this.writeShadow(theme.bigShadow)};\n` +

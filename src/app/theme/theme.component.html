@@ -47,11 +47,32 @@
         </div>
 
         <div class="theme-part">
+          <div class="data-title">Dégradés</div>
+          <app-theme-input class="full-width-input" label="Dégradé 1" type="gradient" [(value)]="theme.gradient1"></app-theme-input>
+          <app-theme-input class="full-width-input" label="Dégradé 2" type="gradient" [(value)]="theme.gradient2"></app-theme-input>
+          <app-theme-input class="full-width-input" label="Dégradé 3" type="gradient" [(value)]="theme.gradient3"></app-theme-input>
+          <app-theme-input class="full-width-input" label="Dégradé 4" type="gradient" [(value)]="theme.gradient4"></app-theme-input>
+        </div>
+
+        <div class="theme-part">
           <div class="data-title">Couleurs des messages</div>
           <app-theme-input class="theme-input" [(value)]="theme.success" label="Couleur de Succès"></app-theme-input>
           <app-theme-input class="theme-input" [(value)]="theme.info" label="Couleur d'Information"></app-theme-input>
           <app-theme-input class="theme-input" [(value)]="theme.danger" label="Couleur de Danger"></app-theme-input>
           <app-theme-input class="theme-input" [(value)]="theme.warning" label="Couleur d'Avertissement"></app-theme-input>
+        </div>
+
+        <div class="theme-part">
+          <div class="data-title">Padding et Bordures</div>
+          <app-theme-input class="theme-input" [(value)]="theme.padding" type="number" label="Padding (en px)"></app-theme-input>
+          <app-theme-input class="theme-input" [(value)]="theme.border" type="number" label="Bordure (en px)"></app-theme-input>
+        </div>
+
+        <div class="theme-part">
+          <div class="data-title">Ombres</div>
+          <app-theme-input class="full-width-input" type="shadow" [(value)]="theme.smallShadow" label="Petite Ombre"></app-theme-input>
+          <app-theme-input class="full-width-input" type="shadow" [(value)]="theme.shadow" label="Ombre"></app-theme-input>
+          <app-theme-input class="full-width-input" type="shadow" [(value)]="theme.bigShadow" label="Grande Ombre"></app-theme-input>
         </div>
       </div>
 
@@ -60,7 +81,7 @@
       </div>
     </div>
 
-    <div (click)="downloadTheme('mytheme.css')">Télécharger</div>
+    <ar-button (click)="downloadTheme('mytheme.css')">Télécharger</ar-button>
   </div>
 
 </div>

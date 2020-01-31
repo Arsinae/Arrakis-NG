@@ -5,6 +5,12 @@ export class Shadow {
   public color: string = '#000000ff';
 }
 
+export class Gradient {
+  public color1: string = '#008080ff';
+  public color2: string = '#200080ff';
+  public direction: number = 90;
+}
+
 export class Theme {
   public primary: string = '#034732ff';
   public secondary: string = '#008258ff';
@@ -19,6 +25,11 @@ export class Theme {
   public color5: string = '#800000ff';
   public color6: string = '#804000ff';
   public color7: string = '#808000ff';
+
+  public gradient1: Gradient = new Gradient();
+  public gradient2: Gradient = new Gradient();
+  public gradient3: Gradient = new Gradient();
+  public gradient4: Gradient = new Gradient();
 
   public success: string = '#008040ff';
   public info: string = '#200080ff';

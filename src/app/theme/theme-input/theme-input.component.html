@@ -1,4 +1,36 @@
 <div class="theme-input">
   <div class="theme-label">{{ label }}</div>
-  <ar-input-color [(value)]="value" (valueChange)="valueChange.emit($event)"></ar-input-color>
+  <ng-container *ngIf="type === 'color'">
+    <ar-input-color [(value)]="value" (valueChange)="valueChange.emit($event)"></ar-input-color>
+  </ng-container>
+
+  <ng-container *ngIf="type === 'gradient'">
+    <ar-select [style.width.px]="50" placeholder="Direction" [value]="value.direction" (valueChange)="value.direction = $event; valueChange.emit(value)">
+      <ar-select-option *ngFor="let dir of direction" [text]="dir" [value]="dir"></ar-select-option>
+    </ar-select>
+
+    <ar-input-color [value]="value.color1" (valueChange)="value.color1 = $event; valueChange.emit(value)"></ar-input-color>
+    <ar-input-color [value]="value.color2" (valueChange)="value.color2 = $event; valueChange.emit(value)"></ar-input-color>
+
+  </ng-container>
+
+  <ng-container *ngIf="type === 'number'">
+    <ar-input-number [style.width.px]="120" placeholder="Padding" [(value)]="value" (valueChange)="valueChange.emit($event)" [min]="0"></ar-input-number>
+  </ng-container>
+  
+  <ng-container *ngIf="type === 'shadow'">
+    <div class="shadow-number-input">
+      X :
+      <ar-input-number [style.width.px]="80" placeholder="X" [(value)]="value.x" (valueChange)="valueChange.emit(value)"></ar-input-number>
+    </div>
+    <div class="shadow-number-input">
+      Y :
+      <ar-input-number [style.width.px]="80" placeholder="Y" [(value)]="value.y" (valueChange)="valueChange.emit(value)"></ar-input-number>
+    </div>
+    <div class="shadow-number-input">
+      Dispersion :
+      <ar-input-number [style.width.px]="80" placeholder="Dispersion" [(value)]="value.spread" (valueChange)="valueChange.emit(value)"></ar-input-number>
+    </div>
+    <ar-input-color [value]="value.color" (valueChange)="value.color = $event; valueChange.emit(value)"></ar-input-color>
+  </ng-container>
 </div>

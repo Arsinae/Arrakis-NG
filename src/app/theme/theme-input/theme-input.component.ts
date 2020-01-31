@@ -13,7 +13,11 @@ export class ThemeInputComponent implements OnInit {
 
   @Output() valueChange: EventEmitter<any> = new EventEmitter();
 
-  constructor() { }
+  public direction: Array<number> = [];
+
+  constructor() {
+    this.direction = [0, 45, 90, 135, 180, 225, 270, 315];
+  }
 
   ngOnInit() {
   }

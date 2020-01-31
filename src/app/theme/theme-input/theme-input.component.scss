@@ -1,6 +1,13 @@
 .theme-input {
   display: flex;
+  justify-content: space-around;
   padding: 3px 12px;
   box-sizing: border-box;
   font-size: 14px;
+}
+
+.shadow-number-input {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
 }
