@@ -7,7 +7,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ThemeInputComponent implements OnInit {
 
-  @Input() value = '';
+  @Input() value: any;
   @Input() label = '';
   @Input() type = 'color';
 
