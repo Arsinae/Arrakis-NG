@@ -1,28 +1,28 @@
 :root {
 
-  --ar-primary: #ba9e5a;
-  --ar-secondary: #07384c;
+  --ar-primary: #034732;
+  --ar-secondary: #008258;
 
   --ar-background-color: #f2f2f2;
-  --ar-text-color: #424242;
+  --ar-text-color: black;
   
-  --ar-color1: #5aa2ba;
-  --ar-color2: #5a5aba;
-  --ar-color3: #72ba5a;
-  --ar-color4: #a25aba;
-  --ar-color5: #ba5a5a;
-  --ar-color6: #ba8a5a;
-  --ar-color7: #baba5a;
+  --ar-color1: #008080;
+  --ar-color2: #200080;
+  --ar-color3: #008040;
+  --ar-color4: #600080;
+  --ar-color5: #800000;
+  --ar-color6: #804000;
+  --ar-color7: #808000;
 
-  --ar-danger: #ba5a5a;
-  --ar-warning: #baba5a;
-  --ar-info: #5a5aba;
-  --ar-success: #72ba72;
+  --ar-danger: #800000;
+  --ar-warning: #808000;
+  --ar-info: #200080;
+  --ar-success: #008040;
 
-  --ar-gradient1: linear-gradient(90deg, #5aa2ba 10%, #5a5aba 90%);
-  --ar-gradient2: linear-gradient(45deg, #baba5a 10%, #ba5a5a 90%);
-  --ar-gradient3: linear-gradient(90deg, #5aa2ba 10%, #72ba5a 90%);
-  --ar-gradient4: linear-gradient(90deg, #a25aba 10%, #ba5a5a 90%);
+  --ar-gradient1: linear-gradient(45deg, #808000 10%, #800000 90%);
+  --ar-gradient2: linear-gradient(90deg, #600080 10%, #800000 90%);
+  --ar-gradient3: linear-gradient(90deg, #008080 10%, #200080 90%);
+  --ar-gradient4: linear-gradient(90deg, #008080 10%, #008040 90%);
 
   --ar-padding: 6px;
 
@@ -30,11 +30,11 @@
   --ar-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
   --ar-big-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
 
-  --border: 12px;
+  --ar-border: 12px;
 
 }
 
-  //    SHADOW
+/*    SHADOW */
 .ar-small-shadow {
   box-shadow: var(--ar-small-shadow);
 }
@@ -45,7 +45,7 @@
   box-shadow: var(--ar-big-shadow);
 }
 
-  //    COLOR
+/*    COLOR */
 .ar-color-primary {
   color: var(--ar-primary);
 }
@@ -106,7 +106,7 @@
   color: var(--ar-danger);
 }
 
-  //    COLOR HOVER
+/*    COLOR HOVER */
 .ar-color-primary-hover:hover {
   color: var(--ar-primary);
 }
@@ -167,7 +167,7 @@
   color: var(--ar-danger);
 }
 
-  //    BACKGROUND-COLOR
+/*    BACKGROUND-COLOR */
 .ar-background-color-primary {
   background-color: var(--ar-primary);
 }
@@ -220,7 +220,7 @@
   background-color: var(--ar-danger);
 }
 
-  //    BACKGROUND-COLOR HOVER
+/*    BACKGROUND-COLOR HOVER */
 .ar-background-color-primary-hover:hover {
   background-color: var(--ar-primary);
 }
@@ -273,7 +273,7 @@
   background-color: var(--ar-danger);
 }
 
-  //    BORDER
+/*    BORDER */
 .ar-border-color-primary {
   border-color: var(--ar-primary);
 }
@@ -326,8 +326,8 @@
   border-color: var(--ar-danger);
 }
 
- //    INPUT COLOR
- .ar-input-color-primary {
+/*    INPUT COLOR */
+.ar-input-color-primary {
   --ar-input-color: var(--ar-primary);
 }
 .ar-input-color-secondary {

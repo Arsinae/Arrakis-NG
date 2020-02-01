@@ -1,0 +1,359 @@
+:root {
+
+  --ar-primary: #ba9e5a;
+  --ar-secondary: #07384c;
+
+  --ar-background-color: #f2f2f2;
+  --ar-text-color: #424242;
+  
+  --ar-color1: #5aa2ba;
+  --ar-color2: #5a5aba;
+  --ar-color3: #72ba5a;
+  --ar-color4: #a25aba;
+  --ar-color5: #ba5a5a;
+  --ar-color6: #ba8a5a;
+  --ar-color7: #baba5a;
+
+  --ar-danger: #ba5a5a;
+  --ar-warning: #baba5a;
+  --ar-info: #5a5aba;
+  --ar-success: #72ba72;
+
+  --ar-gradient1: linear-gradient(90deg, #5aa2ba 10%, #5a5aba 90%);
+  --ar-gradient2: linear-gradient(45deg, #baba5a 10%, #ba5a5a 90%);
+  --ar-gradient3: linear-gradient(90deg, #5aa2ba 10%, #72ba5a 90%);
+  --ar-gradient4: linear-gradient(90deg, #a25aba 10%, #ba5a5a 90%);
+
+  --ar-padding: 6px;
+  --ar-border: 12px;
+
+  --ar-small-shadow: 0 1px 2px rgba(0,0,0,.16);
+  --ar-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+  --ar-big-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+}
+
+.ar-small-shadow {
+  box-shadow: var(--ar-small-shadow);
+}
+.ar-shadow {
+  box-shadow: var(--ar-shadow);
+}
+.ar-big-shadow {
+  box-shadow: var(--ar-big-shadow);
+}
+
+.ar-color-primary {
+  color: var(--ar-primary);
+}
+.ar-color-secondary {
+  color: var(--ar-secondary);
+}
+.ar-color-1 {
+  color: var(--ar-color1);
+}
+.ar-color-2 {
+  color: var(--ar-color2);
+}
+.ar-color-3 {
+  color: var(--ar-color3);
+}
+.ar-color-4 {
+  color: var(--ar-color4);
+}
+.ar-color-5 {
+  color: var(--ar-color5);
+}
+.ar-color-6 {
+  color: var(--ar-color6);
+}
+.ar-color-7 {
+  color: var(--ar-color7);
+}
+.ar-color-gradient1 {
+  background-image: var(--ar-gradient1);
+  background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.ar-color-gradient2 {
+  background-image: var(--ar-gradient2);
+  background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.ar-color-gradient3 {
+  background-image: var(--ar-gradient3);
+  background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.ar-color-gradient4 {
+  background-image: var(--ar-gradient4);
+  background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.ar-color-success {
+  color: var(--ar-success);
+}
+.ar-color-info {
+  color: var(--ar-info);
+}
+.ar-color-warning {
+  color: var(--ar-warning);
+}
+.ar-color-danger {
+  color: var(--ar-danger);
+}
+
+.ar-color-primary-hover:hover {
+  color: var(--ar-primary);
+}
+.ar-color-secondary-hover:hover {
+  color: var(--ar-secondary);
+}
+.ar-color-1-hover:hover {
+  color: var(--ar-color1);
+}
+.ar-color-2-hover:hover {
+  color: var(--ar-color2);
+}
+.ar-color-3-hover:hover {
+  color: var(--ar-color3);
+}
+.ar-color-4-hover:hover {
+  color: var(--ar-color4);
+}
+.ar-color-5-hover:hover {
+  color: var(--ar-color5);
+}
+.ar-color-6-hover:hover {
+  color: var(--ar-color6);
+}
+.ar-color-7-hover:hover {
+  color: var(--ar-color7);
+}
+.ar-color-gradient1-hover:hover {
+  background-image: var(--ar-gradient1);
+  background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.ar-color-gradient2-hover:hover {
+  background-image: var(--ar-gradient2);
+  background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.ar-color-gradient3-hover:hover {
+  background-image: var(--ar-gradient3);
+  background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.ar-color-gradient4-hover:hover {
+  background-image: var(--ar-gradient4);
+  background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.ar-color-success-hover:hover {
+  color: var(--ar-success);
+}
+.ar-color-info-hover:hover {
+  color: var(--ar-info);
+}
+.ar-color-warning-hover:hover {
+  color: var(--ar-warning);
+}
+.ar-color-danger-hover:hover {
+  color: var(--ar-danger);
+}
+
+.ar-background-color-primary {
+  background-color: var(--ar-primary);
+}
+.ar-background-color-secondary {
+  background-color: var(--ar-secondary);
+}
+.ar-background-color-1 {
+  background-color: var(--ar-color1);
+}
+.ar-background-color-2 {
+  background-color: var(--ar-color2);
+}
+.ar-background-color-3 {
+  background-color: var(--ar-color3);
+}
+.ar-background-color-4 {
+  background-color: var(--ar-color4);
+}
+.ar-background-color-5 {
+  background-color: var(--ar-color5);
+}
+.ar-background-color-6 {
+  background-color: var(--ar-color6);
+}
+.ar-background-color-7 {
+  background-color: var(--ar-color7);
+}
+.ar-background-color-gradient1 {
+  background-image: var(--ar-gradient1);
+}
+.ar-background-color-gradient2 {
+  background-image: var(--ar-gradient2);
+}
+.ar-background-color-gradient3 {
+  background-image: var(--ar-gradient3);
+}
+.ar-background-color-gradient4 {
+  background-image: var(--ar-gradient4);
+}
+.ar-background-color-success {
+  background-color: var(--ar-success);
+}
+.ar-background-color-info {
+  background-color: var(--ar-info);
+}
+.ar-background-color-warning {
+  background-color: var(--ar-warning);
+}
+.ar-background-color-danger {
+  background-color: var(--ar-danger);
+}
+
+.ar-background-color-primary-hover:hover {
+  background-color: var(--ar-primary);
+}
+.ar-background-color-secondary-hover:hover {
+  background-color: var(--ar-secondary);
+}
+.ar-background-color-1-hover:hover {
+  background-color: var(--ar-color1);
+}
+.ar-background-color-2-hover:hover {
+  background-color: var(--ar-color2);
+}
+.ar-background-color-3-hover:hover {
+  background-color: var(--ar-color3);
+}
+.ar-background-color-4-hover:hover {
+  background-color: var(--ar-color4);
+}
+.ar-background-color-5-hover:hover {
+  background-color: var(--ar-color5);
+}
+.ar-background-color-6-hover:hover {
+  background-color: var(--ar-color6);
+}
+.ar-background-color-7-hover:hover {
+  background-color: var(--ar-color7);
+}
+.ar-background-color-gradient1-hover:hover {
+  background-image: var(--ar-gradient1);
+}
+.ar-background-color-gradient2-hover:hover {
+  background-image: var(--ar-gradient2);
+}
+.ar-background-color-gradient3-hover:hover {
+  background-image: var(--ar-gradient3);
+}
+.ar-background-color-gradient4-hover:hover {
+  background-image: var(--ar-gradient4);
+}
+.ar-background-color-success-hover:hover {
+  background-color: var(--ar-success);
+}
+.ar-background-color-info-hover:hover {
+  background-color: var(--ar-info);
+}
+.ar-background-color-warning-hover:hover {
+  background-color: var(--ar-warning);
+}
+.ar-background-color-danger-hover:hover {
+  background-color: var(--ar-danger);
+}
+
+.ar-border-color-primary {
+  border-color: var(--ar-primary);
+}
+.ar-border-color-secondary {
+  border-color: var(--ar-secondary);
+}
+.ar-border-color-1 {
+  border-color: var(--ar-color1);
+}
+.ar-border-color-2 {
+  border-color: var(--ar-color2);
+}
+.ar-border-color-3 {
+  border-color: var(--ar-color3);
+}
+.ar-border-color-4 {
+  border-color: var(--ar-color4);
+}
+.ar-border-color-5 {
+  border-color: var(--ar-color5);
+}
+.ar-border-color-6 {
+  border-color: var(--ar-color6);
+}
+.ar-border-color-7 {
+  border-color: var(--ar-color7);
+}
+.ar-border-color-gradient1 {
+  border-image: var(--ar-gradient1) 10;
+}
+.ar-border-color-gradient2 {
+  border-image: var(--ar-gradient2) 10;
+}
+.ar-border-color-gradient3 {
+  border-image: var(--ar-gradient3) 10;
+}
+.ar-border-color-gradient4 {
+  border-image: var(--ar-gradient4) 10;
+}
+.ar-border-color-success {
+  border-color: var(--ar-success);
+}
+.ar-border-color-info {
+  border-color: var(--ar-info);
+}
+.ar-border-color-warning {
+  border-color: var(--ar-warning);
+}
+.ar-border-color-danger {
+  border-color: var(--ar-danger);
+}
+
+.ar-input-color-primary {
+  --ar-input-color: var(--ar-primary);
+}
+.ar-input-color-secondary {
+  --ar-input-color: var(--ar-secondary);
+}
+.ar-input-color-1 {
+  --ar-input-color: var(--ar-color1);
+}
+.ar-input-color-2 {
+  --ar-input-color: var(--ar-color2);
+}
+.ar-input-color-3 {
+  --ar-input-color: var(--ar-color3);
+}
+.ar-input-color-4 {
+  --ar-input-color: var(--ar-color4);
+}
+.ar-input-color-5 {
+  --ar-input-color: var(--ar-color5);
+}
+.ar-input-color-6 {
+  --ar-input-color: var(--ar-color6);
+}
+.ar-input-color-7 {
+  --ar-input-color: var(--ar-color7);
+}
+.ar-input-color-success {
+  --ar-input-color: var(--ar-success);
+}
+.ar-input-color-info {
+  --ar-input-color: var(--ar-info);
+}
+.ar-input-color-warning {
+  --ar-input-color: var(--ar-warning);
+}
+.ar-input-color-danger {
+  --ar-input-color: var(--ar-danger);
+}

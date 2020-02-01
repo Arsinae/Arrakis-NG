@@ -1,8 +1,25 @@
 {
   "name": "arrakis-component",
   "version": "1.0.0",
+  "description": "An Angular8 Components Library",
+  "author": {
+    "name": "Thibaud Huber",
+    "email": "thibaud_huber@yahoo.fr"
+  },
   "peerDependencies": {
     "@angular/common": "^8.2.0",
     "@angular/core": "^8.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Arsinae/Arrakis-NG"
+  },
+  "bugs": {
+    "url": "https://github.com/Arsinae/Arrakis-NG/issues",
+    "email": "thibaud_huber@yahoo.fr"
+  },
+  "keywords": [
+    "angular8",
+    "components library"
+  ]
 }
