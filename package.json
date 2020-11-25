@@ -24,7 +24,7 @@
     "@angular/router": "~8.2.0",
     "copyfiles": "^2.1.1",
     "express": "^4.17.1",
-    "highlight.js": "^9.15.10",
+    "highlight.js": "^10.1.2",
     "ngx-highlightjs": "^3.0.3",
     "path": "^0.12.7",
     "rxjs": "~6.4.0",
